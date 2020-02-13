@@ -54,7 +54,7 @@ class Indexer
     sets, cards = load_database
 
     ### Apply patches
-    apply_patches(cards, sets)
+    # apply_patches(cards, sets)
 
     ### Return data for saving
     [index_data(sets, cards), uuid_data(cards)]

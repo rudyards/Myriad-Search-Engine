@@ -15,8 +15,8 @@ class CardPrinting
     @card = card
     @set = set
     @others = nil
-    @release_date = data["release_date"] ? Date.parse(data["release_date"]) : @set.release_date
-    @release_date_i = @release_date.to_i_sort
+    # @release_date = data["release_date"] ? Date.parse(data["release_date"]) : @set.release_date
+    # @release_date_i = @release_date.to_i_sort
     @watermark = data["watermark"]
     @number = data["number"]
     @multiverseid = data["multiverseid"]
@@ -29,7 +29,7 @@ class CardPrinting
     @flavor = data["flavor"] || -""
     @flavor_normalized = @flavor.normalize_accents
     @foiling = data["foiling"]
-    @border = data["border"] || @set.border
+    # @border = data["border"] || @set.border
     @frame = data["frame"]
     @frame_effects = data["frame_effects"] || []
     rarity = data["rarity"]
@@ -84,9 +84,9 @@ class CardPrinting
     end
   end
 
-  def year
-    @release_date.year
-  end
+  # def year
+  #   @release_date.year
+  # end
 
   # This is a bit too performance-critical to use method_missing
   # It's not a huge difference, but no reason to waste ~5% of execution time on it
@@ -124,9 +124,9 @@ class CardPrinting
     [name, set, number.to_i, number] <=> [other.name, other.set, other.number.to_i, other.number]
   end
 
-  def age
-    [0, (release_date - first_regular_release_date).to_i].max
-  end
+  # def age
+  #   [0, (release_date - first_regular_release_date).to_i].max
+  # end
 
   def inspect
     "CardPrinting(#{name}, #{set_code})"

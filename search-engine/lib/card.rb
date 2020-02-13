@@ -90,7 +90,7 @@ class Card
     @display_power = data["display_power"] ? data["display_power"] : @power
     @display_toughness = data["display_toughness"] ? data["display_toughness"] : @toughness
     @display_mana_cost = data["hide_mana_cost"] ? nil : @mana_cost
-    @partial_color_identity = calculate_partial_color_identity
+    # @partial_color_identity = calculate_partial_color_identity
     if ["vanguard", "planar", "scheme"].include?(@layout) or @types.include?("conspiracy")
       @extra = true
     else
@@ -117,7 +117,7 @@ class Card
     end
     @typeline = -@typeline
     calculate_mana_hash
-    calculate_color_indicator
+    # calculate_color_indicator
     calculate_reminder_text
   end
 
@@ -144,7 +144,7 @@ class Card
   attr_writer :color_identity
   def color_identity
     @color_identity ||= begin
-      return partial_color_identity unless @names
+      # return partial_color_identity unless @names
       raise "Multi-part cards need to have CI set by database"
     end
   end
@@ -281,67 +281,67 @@ class Card
     end
   end
 
-  def calculate_partial_color_identity
-    ci = colors.chars
-    "#{mana_cost} #{text}".scan(/{(.*?)}/).each do |sym,|
-      case sym.downcase
-      when /\A(\d+|[½∞txyzsqpce])\z/
-        # 12xyz - colorless
-        # ½∞ - unset colorless
-        # t - tap
-        # q - untap
-        # s - snow
-        # p - generic Phyrexian mana (like on Rage Extractor text)
-        # c - colorless mana
-      when /\A([wubrg])\z/
-        ci << $1
-      when /\A([wubrg])\/p\z/
-        # Phyrexian mana
-        ci << $1
-      when /\Ah([wubrg])\z/
-        # Unset half colored mana
-        ci << $1
-      when /\A2\/([wubrg])\z/
-        ci << $1
-      when /\A([wubrg])\/([wubrg])\z/
-        ci << $1 << $2
-      when "chaos"
-        # planechase special symbol, disregard
-      else
-        raise "Unknown mana symbol `#{sym}'"
-      end
-    end
-    types.each do |t|
-      tci = {"forest" => "g", "mountain" => "r", "plains" => "w", "island" => "u", "swamp" => "b"}[t]
-      ci << tci if tci
-    end
-    -ci.sort.uniq.join
-  end
+  # def calculate_partial_color_identity
+  #   ci = colors.chars
+  #   "#{mana_cost} #{text}".scan(/{(.*?)}/).each do |sym,|
+  #     case sym.downcase
+  #     when /\A(\d+|[½∞txyzsqpce])\z/
+  #       # 12xyz - colorless
+  #       # ½∞ - unset colorless
+  #       # t - tap
+  #       # q - untap
+  #       # s - snow
+  #       # p - generic Phyrexian mana (like on Rage Extractor text)
+  #       # c - colorless mana
+  #     when /\A([wubrg])\z/
+  #       ci << $1
+  #     when /\A([wubrg])\/p\z/
+  #       # Phyrexian mana
+  #       ci << $1
+  #     when /\Ah([wubrg])\z/
+  #       # Unset half colored mana
+  #       ci << $1
+  #     when /\A2\/([wubrg])\z/
+  #       ci << $1
+  #     when /\A([wubrg])\/([wubrg])\z/
+  #       ci << $1 << $2
+  #     when "chaos"
+  #       # planechase special symbol, disregard
+  #     else
+  #       raise "Unknown mana symbol `#{sym}'"
+  #     end
+  #   end
+  #   types.each do |t|
+  #     tci = {"forest" => "g", "mountain" => "r", "plains" => "w", "island" => "u", "swamp" => "b"}[t]
+  #     ci << tci if tci
+  #   end
+  #   -ci.sort.uniq.join
+  # end
 
-  def calculate_color_indicator
-    colors_inferred_from_mana_cost = (@mana_hash || {}).keys
-      .flat_map do |x|
-        next [] if x =~ /[?xyzcs]/
-        x = x.sub(/[p2]/, "")
-        if x =~ /\A[wubrg]+\z/
-          x.chars
-        else
-          raise "Unknown mana cost: #{x}"
-        end
-      end
-      .uniq
+  # def calculate_color_indicator
+  #   colors_inferred_from_mana_cost = (@mana_hash || {}).keys
+  #     .flat_map do |x|
+  #       next [] if x =~ /[?xyzcs]/
+  #       x = x.sub(/[p2]/, "")
+  #       if x =~ /\A[wubrg]+\z/
+  #         x.chars
+  #       else
+  #         raise "Unknown mana cost: #{x}"
+  #       end
+  #     end
+  #     .uniq
 
-    actual_colors = @colors.chars
+  #   actual_colors = @colors.chars
 
-    if colors_inferred_from_mana_cost.sort == actual_colors.sort
-      @color_indicator = nil
-    else
-      @color_indicator = Color.color_indicator_name(actual_colors)
-    end
-    if @color_indicator
-      @color_indicator_set = actual_colors.to_set
-    end
-  end
+  #   if colors_inferred_from_mana_cost.sort == actual_colors.sort
+  #     @color_indicator = nil
+  #   else
+  #     @color_indicator = Color.color_indicator_name(actual_colors)
+  #   end
+  #   if @color_indicator
+  #     @color_indicator_set = actual_colors.to_set
+  #   end
+  # end
 
   def calculate_reminder_text
     @reminder_text = nil

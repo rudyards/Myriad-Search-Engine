@@ -41,9 +41,28 @@ end
 desc "Fetch new mtgjson database and update index"
 task "mtgjson:update" => ["mtgjson:fetch", "index"]
 
-desc "Update penny dreadful banlist"
-task "pennydreadful:update" do
-  system "wget -q http://pdmtgo.com/legal_cards.txt -O index/penny_dreadful_legal_cards.txt"
+
+desc "Fetch Myriad pics"
+task "pics:myriad" do
+  pics = Pathname("frontend/public/cards")
+  db.printings.each do |c|
+    next unless c.multiverseid
+    if c.layout == "split"
+      tempNumber = c.number.gsub(/[ab]/, "")
+    else
+      tempNumber = c.number
+    end
+    path = pics + Pathname("#{c.set_code}/#{tempNumber}.jpg")
+    path.parent.mkpath
+    next if path.exist?
+    url = "https://myriadmtg.000webhostapp.com/images/#{c.set_code}/#{tempNumber}.jpg"
+    puts "Downloading #{c.name} #{c.set_code} #{c.multiverseid}"
+    puts "   from #{url.to_s}"
+    puts "   to #{path.to_s}"
+    command = "wget -nv -nc #{url} -O #{path}"
+    #puts "   command: #{command}"
+    system "wget", "-nv", "-nc", url, "-O", path.to_s
+  end
 end
 
 desc "Fetch Gatherer pics"
@@ -126,7 +145,6 @@ end
 desc "Full update"
 task "update" do
   Rake::Task["rules:update"].invoke
-  Rake::Task["pennydreadful:update"].invoke
   Rake::Task["mtgjson:fetch"].invoke
   Rake::Task["index"].invoke
   sh "~/github/magic-preconstructed-decks/bin/build_jsons ./decks.json"
