@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Hub of Innovation</ShortName>
+  <Description>Hub of Innovation is a search engine for the Myriad custom format</Description>
+  <Tags>mtg</Tags>
+  <Contact>summersrudy@gmail.com</Contact>
+  <Url type="text/html" template="http://hub-of-innovation.herokuapp.com/card?q={searchTerms}"/>
+</OpenSearchDescription>

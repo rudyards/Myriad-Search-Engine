@@ -1,29 +1,17 @@
 describe "Full Database Test" do
   include_context "db"
 
-  # This changes whenever a new set is added, and needs updating a lot
-  # The point of this test is to make sure cards don't get added or dropped
-  # by changes which are not expected to, like updating to new mtgjson data for same sets,
-  # indexer changes etc.
   it "stats" do
-    db.number_of_cards.should eq(20716)
-    db.number_of_printings.should eq(47941)
-  end
-
-  # I'm not even sure what good this test does, delete?
-  it "is:promo" do
-    # it's not totally clear what counts as "promo"
-    # and different engines return different results
-    # It might be a good idea to sort out edge cases someday
-    assert_count_printings "is:promo", 4346
+    db.number_of_cards.should eq(18748)
+    db.number_of_printings.should eq(37176)
   end
 
   it "block codes" do
     assert_search_equal "b:rtr", 'b:"Return to Ravnica"'
-    assert_search_equal "b:in", "b:Invasion"
+    assert_search_equal "b:in", 'b:Invasion'
     assert_search_equal "b:som", 'b:"Scars of Mirrodin"'
-    assert_search_equal "b:som", "b:scars"
-    assert_search_equal "b:mi", "b:Mirrodin"
+    assert_search_equal "b:som", 'b:scars'
+    assert_search_equal "b:mi", 'b:Mirrodin'
   end
 
   it "block special characters" do
@@ -38,15 +26,14 @@ describe "Full Database Test" do
     assert_search_equal "e:lw or e:mt or e:shm or e:eve", "b:lorwyn"
     assert_search_equal "e:som or e:mbs or e:nph", "b:som"
     assert_search_equal "e:mi or e:ds or e:5dn", "b:mi"
-    # Promos are now per set
-    assert_search_equal "e:som or e:psom", "e:scars"
+    assert_search_equal "e:som", "e:scars"
     assert_search_equal_cards 'f:"lorwyn shadowmoor block"', "b:lorwyn"
     # Fake blocks
     assert_search_equal "e:dom", "b:dom"
     # Gatherer codes
-    assert_search_equal "b:lw", "b:lrw"
-    assert_search_equal "b:mi", "b:mrd"
-    assert_search_equal "b:mr", "b:mir"
+    assert_search_equal 'b:lw', "b:lrw"
+    assert_search_equal 'b:mi', "b:mrd"
+    assert_search_equal 'b:mr', "b:mir"
   end
 
   it "edition special characters" do
@@ -65,14 +52,7 @@ describe "Full Database Test" do
       "Failure", "Comply",
       "Heaven", "Earth",
       "Claim", "Fame",
-      "Appeal", "Authority",
-      "Curious Pair", "Treats to Share",
-      "Embereth Shieldbreaker", "Battle Display",
-      "Faerie Guidemother", "Gift of the Fae",
-      "Rimrock Knight", "Boulder Rush",
-      "Shepherd of the Flock", "Usher to Safety",
-      "Smitten Swordmaster", "Curry Favor",
-      "Smelt (CMB1)", "Herd", "Saw"
+      "Appeal", "Authority"
     # Semantics of that changed
     assert_search_results "part:cmc=0 part:cmc=3 part:c:b"
   end
@@ -83,29 +63,26 @@ describe "Full Database Test" do
       "Plains",
       "Snow-Covered Island",
       "Snow-Covered Plains",
-      "Wastes",
-      "Barry's Land"
+      "Wastes"
   end
 
   it "year" do
     Query.new("year=2013 t:jace").search(db).card_names_and_set_codes.should eq([
-      ["Jace, Memory Adept", "m14", "psdc"],
+      ["Jace, Memory Adept", "m14", "mbp"],
       ["Jace, the Mind Sculptor", "v13"],
     ])
   end
 
   it "print date" do
-    # M13 prerelease
-    assert_search_results %Q[print="12 july 2012"],
-      "Cathedral of War",
-      "Magmaquake",
-      "Mwonvuli Beast Tracker",
-      "Staff of Nin",
-      "Xathrid Gorgon"
-    assert_search_equal %Q[print="12 july 2012"], %Q[print=2012-07-12]
+    assert_search_results %Q[print="29 september 2012"],
+      "Archon of the Triumvirate",
+      "Carnival Hellsteed",
+      "Corpsejack Menace",
+      "Grove of the Guardian",
+      "Hypersonic Dragon"
+    assert_search_equal %Q[print="29 september 2012"], %Q[print=2012-09-29]
   end
 
-  # Digital only cards with their bullshit release dates are really messing up with this test
   it "print" do
     assert_search_equal "t:planeswalker print=m12", "t:planeswalker e:m12"
     assert_search_results "t:jace print=2013", "Jace, Memory Adept", "Jace, the Mind Sculptor"
@@ -114,7 +91,6 @@ describe "Full Database Test" do
 
     # This is fairly silly, as it includes prerelease promos etc.
     assert_search_results "e:soi firstprint<soi",
-      "Call the Bloodline", # mtgjson error
       "Catalog",
       "Compelling Deterrence",
       "Dead Weight",
@@ -135,7 +111,6 @@ describe "Full Database Test" do
       "Pore Over the Pages",
       "Puncturing Light",
       "Reckless Scholar",
-      "Rise from the Tides", # mtgjson error
       "Swamp",
       "Throttle",
       "Tooth Collector",
@@ -143,7 +118,41 @@ describe "Full Database Test" do
       "Tormenting Voice",
       "Unruly Mob"
 
-    assert_search_equal "in:soi lastprint>soi", "in:soi -lastprint<=soi"
+    assert_search_results "e:soi lastprint>soi",
+      "Aim High",
+      "Archangel Avacyn",
+      "Arlinn Kord",
+      "Arlinn, Embraced by the Moon",
+      "Avacyn, the Purifier",
+      "Dauntless Cathar",
+      "Dual Shot",
+      "Engulf the Shore",
+      "Explosive Apparatus",
+      "Forest",
+      "Forsaken Sanctuary",
+      "Foul Orchard",
+      "Grotesque Mutation",
+      "Highland Lake",
+      "Island",
+      "Macabre Waltz",
+      "Magnifying Glass",
+      "Mountain",
+      "Plains",
+      "Pyre Hound",
+      "Rabid Bite",
+      "Reckless Scholar",
+      "Rush of Adrenaline",
+      "Sleep Paralysis",
+      "Stone Quarry",
+      "Swamp",
+      "Thornhide Wolves",
+      "Tormenting Voice",
+      "Triskaidekaphobia",
+      "Uncaged Fury",
+      "Vampire Noble",
+      "Vessel of Nascency",
+      "Warped Landscape",
+      "Woodland Stream"
   end
 
   it "firstprint" do
@@ -151,15 +160,10 @@ describe "Full Database Test" do
   end
 
   it "lastprint" do
-    assert_search_results "t:planeswalker lastprint<=roe",
-      "Chandra Ablaze",
-      "Sarkhan the Mad",
-      "Nissa Revane"
+    assert_search_results "t:planeswalker lastprint<=roe", "Chandra Ablaze", "Sarkhan the Mad"
     assert_search_results "t:planeswalker lastprint<=2011",
-      "Chandra Ablaze",
-      "Elspeth Tirel",
-      "Nissa Revane",
-      "Sarkhan the Mad"
+      "Ajani Goldmane", "Ajani Vengeant", "Chandra Ablaze", "Elspeth Tirel",
+      "Nissa Revane", "Sarkhan the Mad", "Sorin Markov", "Tezzeret, Agent of Bolas"
   end
 
   it "alt Rebecca Guay" do
@@ -175,11 +179,9 @@ describe "Full Database Test" do
       "Coral Merfolk",
       "Dark Banishing",
       "Dark Ritual",
-      "Defense of the Heart",
       "Elven Cache",
       "Elvish Lyrist",
       "Elvish Piper",
-      "Fecundity",
       "Forest",
       "Gaea's Blessing",
       "Island",
@@ -199,14 +201,16 @@ describe "Full Database Test" do
       "Twiddle",
       "Wall of Wood",
       "Wanderlust",
-      "Wood Elves",
-      "Youthful Knight"
+      "Wood Elves"
   end
 
   it "alt test of time" do
-    assert_search_results "year=1993 alt:(year=2015 -is:digital)",
+    assert_search_results "year=1993 alt:year=2015",
       "Basalt Monolith",
+      "Counterspell",
+      "Dark Ritual",
       "Desert Twister",
+      "Disenchant",
       "Earthquake",
       "Forest",
       "Island",
@@ -218,33 +222,28 @@ describe "Full Database Test" do
       "Plains",
       "Sengir Vampire",
       "Serra Angel",
+      "Shatter",
       "Shivan Dragon",
       "Sol Ring",
-      "Swamp"
+      "Spell Blast",
+      "Swamp",
+      "Tranquility"
   end
 
   it "alt rarity" do
     assert_search_include "r:common alt:r:uncommon", "Doom Blade"
-    assert_search_results "r:common -is:digital alt:(r:mythic -is:digital)",
-      "Boil",
+    assert_search_results "r:common alt:r:mythic",
       "Cabal Ritual",
-      "Capsize",
-      "Chain Lightning",
-      "Counterspell",
+      "Chainer's Edict",
       "Dark Ritual",
-      "Daze",
       "Delver of Secrets",
       "Desert",
-      "Diabolic Edict",
       "Fyndhorn Elves",
       "Hymn to Tourach",
       "Impulse",
       "Insectile Aberration",
       "Kird Ape",
-      "Lotus Petal",
-      "Meekstone",
-      "Ornithopter",
-      "Spell Pierce"
+      "Lotus Petal"
   end
 
   it "pow:special" do
@@ -276,6 +275,13 @@ describe "Full Database Test" do
     assert_search_results "tou>8-*"
     assert_search_results "tou<=8-*", "Shapeshifter"
     assert_search_results "tou<=2-*"
+  end
+
+  it "is:promo" do
+    # it's not totally clear what counts as "promo"
+    # and different engines return different results
+    # It might be a good idea to sort out edge cases someday
+    assert_count_printings "is:promo", 1198
   end
 
   it "is:funny" do
@@ -343,7 +349,7 @@ describe "Full Database Test" do
 
   it "comma separated set list" do
     assert_search_equal "e:cmd or e:cm1 or e:c13 or e:c14 or e:c15 or e:c16 or e:c17 or e:c18 or e:cma or e:cm2", "e:cmd,cm1,c13,c14,c15,c16,c17,c18,cma,cm2"
-    assert_search_equal "st:portal -alt:-st:portal", "e:por,p02,ptk -alt:-e:por,p02,ptk"
+    assert_search_equal "st:cmd -alt:-st:cmd", "e:cmd,cm1,c13,c14,c15,c16,c17,c18,cma,cm2 -alt:-e:cmd,cm1,c13,c14,c15,c16,c17,c18,cma,cm2"
   end
 
   it "comma separated block list" do
@@ -372,7 +378,7 @@ describe "Full Database Test" do
   end
 
   it "is brawler" do
-    assert_search_equal_cards "is:brawler", "(is:primary t:legendary t:creature) OR (is:primary t:legendary t:planeswalker)"
+    assert_search_equal_cards "is:brawler", "(is:primary t:legendary t:creature) OR (is:primary t:planeswalker)"
   end
 
   # Bugfix
@@ -381,17 +387,29 @@ describe "Full Database Test" do
     "e:cma".should have_count_printings(320)
   end
 
+  it "gtw/wpn/grc set codes" do
+    "e:gtw".should have_count_printings(20)
+    "e:wpn".should have_count_printings(45)
+    "e:grc".should have_count_printings(0)
+  end
+
   it "is:permanent" do
     assert_search_equal "is:permanent", "not (t:instant or t:sorcery or t:plane or t:scheme or t:phenomenon or t:conspiracy or t:vanguard)"
   end
 
   it "promo and special" do
-    warn "not sure what to do with rarity special (v4 no longer uses it, should we?)"
-    assert_search_equal "r:special", "(Super Secret Tech) or (e:vma r:special)"
+    # Are promo basics really of basic rarity?
+    assert_search_equal "t:basic is:promo", "t:basic r:special"
+    assert_search_equal "t:basic", "(r:basic -t:urza's) or (t:basic r:special) or (t:basic e:an)"
+    assert_search_results "is:promo -r:special -e:ugin"
+    assert_search_results %Q[r:special -is:promo -st:masterpiece -t:vanguard -e:anthologies -e:tsts -e:"clash pack" -e:vma -e:mgbc],
+      "Giant Trap Door Spider",
+      "Super Secret Tech",
+      "Tazeem"
   end
 
-  it "all planeswalkers are legendary (except CMB1)" do
-    assert_search_results "t:planeswalker -t:legendary", "Personal Decoy"
+  it "all planeswalkers are legendary" do
+    assert_search_results "t:planeswalker -t:legendary"
   end
 
   it "frame:" do
@@ -401,7 +419,7 @@ describe "Full Database Test" do
   end
 
   it "is:unique" do
-    number_of_unique_cards = db.cards.values.count { |c| c.printings.size == 1 }
+    number_of_unique_cards = db.cards.values.count{|c| c.printings.size == 1}
     assert_count_cards "is:unique", number_of_unique_cards
     assert_search_equal "is:unique", "++ is:unique"
     assert_search_equal "not:unique", "-is:unique"
@@ -423,43 +441,17 @@ describe "Full Database Test" do
     lim_duls_cohort.text.should eq("Whenever Lim-Dûl's Cohort blocks or becomes blocked by a creature, that creature can't be regenerated this turn.")
   end
 
-  it "artist unicode" do
-    assert_search_equal %Q[a:"baǵa"], %Q[a:"baga"]
-    assert_search_equal %Q[a:Snõddy], %Q[a:snoddy]
-    assert_search_equal %Q[a:Véronique], %Q[a:Veronique]
-    assert_search_equal %Q[a:Ćeran], %Q[a:ceran]
-  end
-
   it "Non-alphanumeric characters in set names are ignored and 's is normalized" do
     assert_search_equal %Q[e:"Elves vs Inventors"], %Q[e:"Elves vs. Inventors"]
     assert_search_equal %Q[e:"From the Vault: Transform"], %Q[e:"From the Vault Transform"]
     assert_search_equal %Q[e:"Duel Decks: Nissa vs. Ob Nixilis"], %Q[e:"Duel Decks Nissa vs Ob Nixilis"]
-    assert_search_equal %Q[e:"Ugin's Fate"], %Q[e:"Ugin Fate"]
-    assert_search_equal %Q[e:"Ugin's Fate"], %Q[e:"Ugins Fate"]
+    assert_search_equal %Q[e:"Ugin's Fate promos"], %Q[e:"Ugin Fate promos"]
+    assert_search_equal %Q[e:"Ugin's Fate promos"], %Q[e:"Ugins Fate promos"]
     assert_search_equal %Q[e:"Duel Decks Anthology, Divine vs. Demonic"], %Q[e:"Duel Decks Anthology Divine vs Demonic"]
+    assert_search_equal %Q[e:"Magic: The Gathering—Conspiracy"], %Q[e:"Magic The Gathering Conspiracy"]
   end
 
-  it "year" do
-    "t:planeswalker year = 2010".should have_count_printings 15
-    "t:planeswalker year < 2013".should have_count_printings 68
-    "t:planeswalker year > 2014".should equal_search "t:planeswalker year >= 2015"
-  end
-
-  it "is:custom" do
-    assert_search_results "is:custom"
-  end
-
-  it "is:mainfront" do
-    # Not the same for split cards
-    assert_search_equal "-is:split is:mainfront", "-is:split is:front is:primary"
-  end
-
-  it "is:buyabox" do
-    assert_search_include "is:buyabox", "Nexus of Fate"
-    assert_search_results "is:buyabox is:booster"
-  end
-
-  def legality_information(name, date = nil)
+  def legality_information(name, date=nil)
     db.cards[name.downcase].legality_information(date)
   end
 end

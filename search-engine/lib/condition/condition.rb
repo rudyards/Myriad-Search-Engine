@@ -36,7 +36,7 @@ class Condition
   private
 
   def normalize_text(text)
-    text.downcase.normalize_accents.strip
+    text.downcase.gsub(/[Ææ]/, "ae").tr("Äàáâäèéêíõöúûü’\u2212", "Aaaaaeeeioouuu'-").strip
   end
 
   def normalize_name(name)

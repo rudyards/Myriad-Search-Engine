@@ -1,18 +1,23 @@
 # Examples from https://scryfall.com/docs/syntax
 # and how they work on mtg.wtf
-#
-# This spec is not really maintained, and parts should probably be moved around
 describe "Scryfall" do
   include_context "db"
 
-  it "c:rg is and" do
-    assert_search_equal "c:rg", "c:r AND c:g"
+  it "crg_and_or" do
+    # we follow MCI style AND
+    assert_search_equal "c:rg", "c:r OR c:g"
+    # scryfall follows AND
+    assert_search_differ "c:rg", "c:r AND c:g"
+    # It's arguable which behaviour is better
   end
 
-  it "color: alias" do
-    assert_search_equal "color:uw", "c:uw"
-    assert_search_equal "color:red", "c:red"
-    assert_search_equal "color:mardu", "c:mardu"
+  # scryfall supports "c:red" too
+  # should I add that?
+  it "color_alias" do
+    # color: is alias for c:
+    assert_search_equal "color:uw -c:r", "(c:u OR c:w) -c:r"
+    # it's still OR, not AND
+    assert_search_differ "color:uw -c:r", "(c:u AND c:w) -c:r"
   end
 
   it "colorless" do
@@ -81,7 +86,7 @@ describe "Scryfall" do
       "Taurean Mauler"
   end
 
-  it "tribal type" do
+  it "tribal_type" do
     # scryfall includes changelings as every creature type
     assert_search_include "t:goblin -t:creature",
       "Tarfire"
@@ -89,7 +94,7 @@ describe "Scryfall" do
       "Ego Erasure"
   end
 
-  it "banned commander" do
+  it "banned_commander" do
     # scryfall does the silly thing of counting conspiracies
     # as "banned" instead of as non-cards
     assert_search_include "banned:commander",
@@ -100,7 +105,7 @@ describe "Scryfall" do
 
   it "restricted_vintage" do
     # Identical results
-    assert_count_cards "restricted:vintage", 50
+    assert_count_cards "restricted:vintage", 46
   end
 
   it "e_mm2" do
@@ -256,9 +261,11 @@ describe "Scryfall" do
   end
 
   it "is_colorshifted" do
-    # MCI/v3 is:timeshifted is SF/v4 is:colorshifted
-    assert_search_equal "is:colorshifted", "frame:colorshifted"
-    assert_search_equal "is:timeshifted", "e:tsb"
+    # MCI is:timeshifted is SF is:colorshifted
+    # SF is:timeshifted is e:tsts
+    # no good way out so we just alias is:colorshifted to is:timeshifted
+    assert_search_equal "is:colorshifted", "is:timeshifted"
+    assert_count_printings "is:timeshifted", 45
   end
 
   it "oracle_tilde" do
@@ -267,6 +274,13 @@ describe "Scryfall" do
       "Deadlock Trap",
       "Port Town",
       "Izzet Boilerworks"
+  end
+
+  it "white_creature_standard" do
+    # identical results
+    assert_search_include 'c:w t:creature f:standard',
+      "Aerial Responder",
+      "Wispweaver Angel"
   end
 
   it "pow_gt_tou" do
@@ -317,13 +331,17 @@ describe "Scryfall" do
       "Azorius Chancery",      # land with uw color identity
       "Agent of Horizons",     # g card with gu color identity
       "Turn", "Burn"           # split card with ur color identity
+
   end
 
-  it "br spell standard" do
-    assert_search_equal "c:br is:spell f:standard", "(c:b and c:r) is:spell f:standard"
+  it "br_spell_standard" do
+    # MCI/mtg.wtf c: works as OR
+    # scryfall c: works as AND
+
+    assert_search_equal "c:br is:spell f:standard", "(c:b or c:r) is:spell f:standard"
   end
 
-  it "ignore plusplus" do
+  it "ignore_plusplus" do
     # ++ is display control directive, and right now they live on frontend side,
     # not on search engine side (except sort:, which lives in between)
     # It shouldn't affect the results
@@ -337,43 +355,41 @@ describe "Scryfall" do
     assert_search_equal '++e:all', 'e:all'
   end
 
-  it "new frame" do
+  it "new_frame" do
     # scryfall distinguishes "modern" and "new" frame
     # mtg.wtf and MCI treat them as same frame
     # maybe scryfall has a point here?
 
     # no old/future frame mythics
-    # (well, except ovnt, but that's a fake set)
-    # ppre looks like a bug
-    assert_search_equal "is:new r:mythic is:paper", "r:mythic is:paper"
+    assert_search_equal "is:new r:mythic", "r:mythic"
   end
 
-  it "scryfall bug cmc" do
+  it "scryfall_bug_cmc" do
     # meld cmc is sum of part cmcs
     "c:c t:creature cmc=0".should exclude_cards("Chittering Host")
     # flip cmc equals other part, weirdly it only affect some cards, not all
     "ravager cmc=0".should return_no_cards # "Ravager of the Fells"
   end
 
-  it "scryfall bug uncards" do
+  it "scryfall_bug_uncards" do
     # scryfall doesn't include uncards at all
     assert_search_include "clay", "Clay Pigeon"
   end
 
-  it "red creatures with cmc 2 or less" do
+  it "red_creatures_with_cmc_2_or_less" do
     # scryfall currently failing due to cmc bugs
     assert_search_exclude "c:r t:creature cmc<=2",
       "Ravager of the Fells"
   end
 
-  it "blue cmc 5" do
+  it "blue_cmc_5" do
     # scryfall cmc errors again
     assert_search_include "c:u cmc=5",
       "Ghastly Haunting",
       "Soul Seizer"
   end
 
-  it "common artifact" do
+  it "common_artifact" do
     # differ due to uncards
     assert_search_include "r:common t:artifact",
       "Abzan Banner",
@@ -381,7 +397,7 @@ describe "Scryfall" do
       "Paper Tiger" # uncard
   end
 
-  it "oracle ignores reminder text" do
+  it "oracle_ignores_reminder_text" do
     # scryfall repeating MCI's mistakes and not cleaning up reminder text
     assert_search_include 'o:"draw" t:creature',
       "Abomination of Gudul"
@@ -389,8 +405,9 @@ describe "Scryfall" do
       "Tireless Tracker"
   end
 
-  it "set: is alias of e:" do
-    assert_search_equal "set:nph", "e:nph"
-    assert_search_equal 'set:"Dragons of Tarkir"', 'e:"Dragons of Tarkir"'
+  it "is_digital" do
+    # scryfall includes "Gleemox" - https://scryfall.com/card/pgmx/1
+    # and I have no idea what's that
+    assert_search_equal "is:digital", "e:med OR e:me2 OR e:me3 OR e:me4 OR e:vma OR e:tpr"
   end
 end

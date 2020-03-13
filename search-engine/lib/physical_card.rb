@@ -46,34 +46,6 @@ class PhysicalCard
     main_front.in_boosters?
   end
 
-  def color_identity
-    main_front.color_identity
-  end
-
-  def allowed_in_any_number?
-    main_front.allowed_in_any_number?
-  end
-
-  def commander?
-    main_front.commander?
-  end
-
-  def brawler?
-    main_front.brawler?
-  end
-
-  def partner?
-    main_front.partner?
-  end
-
-  def partner
-    main_front.partner
-  end
-
-  def valid_partner_for?(other)
-    main_front.valid_partner_for?(other.main_front)
-  end
-
   def rarity
     main_front.rarity
   end
@@ -99,11 +71,6 @@ class PhysicalCard
 
   def eql?(other)
     self == other
-  end
-
-  include Comparable
-  def <=>(other)
-    [main_front, foil ? 1 : 0] <=> [other.main_front, other.foil ? 1 : 0]
   end
 
   def self.for(card, foil=false)

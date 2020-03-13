@@ -5,7 +5,7 @@ class ConditionBanned < ConditionFormat
 
   private
 
-  def card_ok?(card)
-    @format.banned?(card)
+  def legality_ok?(legality)
+    legality == "banned"
   end
 end

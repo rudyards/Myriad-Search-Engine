@@ -14,34 +14,22 @@ class CardSheetFactory
     CardSheet.new(sheets.map(&:first), sheets.map{|s,w| s.elements.size * w})
   end
 
-  def from_query(query, assert_count=nil, foil: false, kind: CardSheet)
-    cards = find_cards(query, assert_count, foil: foil)
-    kind.new(cards)
-  end
-
-  def find_cards(query, assert_count=nil, foil: false)
-    if foil
-      base_query = "++ is:booster is:foil"
-    else
-      base_query = "++ is:booster is:nonfoil"
-    end
-    cards = @db.search("#{base_query} (#{query})").printings.map{|c| PhysicalCard.for(c, foil)}.uniq
+  def from_query(query, assert_count=nil, foil: false)
+    cards = @db.search("++ #{query}").printings.map{|c| PhysicalCard.for(c, foil)}.uniq
     if assert_count and assert_count != cards.size
       raise "Expected query #{query} to return #{assert_count}, got #{cards.size}"
     end
-    cards
+    CardSheet.new(cards)
   end
 
   ### Usual Sheet Types
 
-  # We don't have anywhere near reliable information
+  # Wo don't have anywhere near reliable information
   # Masterpieces supposedly are in 1/144 booster (then 1/129 for Amonkhet), and they're presumably equally likely
   #
   # These numbers could be totally wrong. I base them on a million guesses by various internet commenters.
-  #
-  # Maro says basic foils and common foils are equally likely [https://twitter.com/maro254/status/938830320094216192]
   def foil_sheet(set_code)
-    sheets = [rare_mythic(set_code, foil: true), rarity(set_code, "uncommon", foil: true)]
+    sheets = [rare_or_mythic(set_code, foil: true), rarity(set_code, "uncommon", foil: true)]
     weights = [4, 8]
 
     masterpieces = masterpieces_for(set_code)
@@ -50,38 +38,47 @@ class CardSheetFactory
       weights << 1
     end
 
-    sheets << common_or_basic(set_code, foil: true)
-    weights << (32 - weights.sum)
+    basic_sheet = rarity(set_code, "basic", foil: true)
+    if basic_sheet
+      sheets << basic_sheet
+      weights << 4
+    end
+
+    sheets << rarity(set_code, "common", foil: true)
+    weights << (32 - weights.inject(0, &:+))
 
     CardSheet.new(sheets, weights)
   end
 
-  def rarity(set_code, rarity, foil: false, kind: CardSheet)
+  def rarity(set_code, rarity, foil: false)
     set = @db.sets[set_code]
     cards = set.physical_cards(foil).select(&:in_boosters?)
     # raise "#{set.code} #{set.same} has no cards in boosters" if cards.empty?
     cards = cards.select{|c| c.rarity == rarity}
     # raise "#{set.code} #{set.same} has no #{rarity} cards in boosters" if cards.empty?
-    return nil if cards.empty?
-    kind.new(cards)
-  end
-
-  def common_or_basic(set_code, foil: false, kind: ColorBalancedCardSheet)
-    set = @db.sets[set_code]
-    cards = set.physical_cards(foil).select(&:in_boosters?)
-    cards = cards.select{|c| c.rarity == "basic" or c.rarity == "common"}
-    return nil if cards.empty?
-    kind.new(cards)
+    if cards.empty?
+      nil
+    else
+      CardSheet.new(cards)
+    end
   end
 
   # If rare or mythic sheet contains subsheets
   # treat variants as 1/N chance eachs
   # This only matters for Unstable
   # Rares appear 2x more frequently on shared sheet
-  def rare_mythic(set_code, foil: false)
+  def rare_or_mythic(set_code, foil: false)
     mix_sheets(
       [rarity(set_code, "rare", foil: foil), 2],
       [rarity(set_code, "mythic", foil: foil), 1]
+    )
+  end
+
+  def common_or_basic(set_code)
+    # Assume basics are just commons for sheet purposes
+    mix_sheets(
+      [rarity(set_code, "common"), 1],
+      [rarity(set_code, "basic"), 1],
     )
   end
 
@@ -103,9 +100,9 @@ class CardSheetFactory
     when "aer"
       masterpiece_sheet(@db.sets["mps"], 31..54)
     when "akh"
-      masterpiece_sheet(@db.sets["mp2"], 1..30)
+      masterpiece_sheet(@db.sets["mps_akh"], 1..30)
     when "hou"
-      masterpiece_sheet(@db.sets["mp2"], 31..54)
+      masterpiece_sheet(@db.sets["mps_akh"], 31..54)
     else
       nil
     end
@@ -126,7 +123,7 @@ class CardSheetFactory
   end
 
   def explicit_sheet(set_code, print_sheet_code)
-    cards = @db.sets[set_code].printings.select{|c| c.in_boosters? and c.print_sheet[0] == print_sheet_code}
+    cards = @db.sets[set_code].printings.select{|c| c.print_sheet[0] == print_sheet_code}
     groups = cards.group_by{|c| c.print_sheet[1..-1].to_i}
     subsheets = groups.map{|mult,cards| [CardSheet.new(cards.map{|c| PhysicalCard.for(c) }), mult] }
     mix_sheets(*subsheets)
@@ -143,7 +140,7 @@ class CardSheetFactory
   end
 
   def dgm_common
-    from_query("e:dgm r:common -t:gate", 60, kind: ColorBalancedCardSheet)
+    from_query("e:dgm r:common -t:gate", 60)
   end
 
   def dgm_rare_mythic
@@ -154,15 +151,15 @@ class CardSheetFactory
   end
 
   def unhinged_foil_rares
-    from_query("e:unh r>=rare", 40+1, foil: true)
+    from_query("e:uh r>=rare", 40+1, foil: true)
   end
 
   def unhinged_foil
     sheets = [
       unhinged_foil_rares,
-      rarity("unh", "uncommon", foil: true),
-      rarity("unh", "basic", foil: true),
-      rarity("unh", "common", foil: true),
+      rarity("uh", "uncommon", foil: true),
+      rarity("uh", "basic", foil: true),
+      rarity("uh", "common", foil: true),
     ]
     weights = [
       1,
@@ -181,7 +178,7 @@ class CardSheetFactory
   end
 
   def frf_common
-    from_query("e:frf r:common -is:gainland", 60, kind: ColorBalancedCardSheet)
+    from_query("e:frf r:common -is:gainland", 60)
   end
 
   def theros_gods
@@ -219,14 +216,14 @@ class CardSheetFactory
   end
 
   def sfc_common(set_code)
-    from_query("e:#{set_code} r:common -is:dfc -is:meld", kind: ColorBalancedCardSheet)
+    from_query("e:#{set_code} r:common -is:dfc -is:meld")
   end
 
   def sfc_uncommon(set_code)
     from_query("e:#{set_code} r:uncommon -is:dfc -is:meld")
   end
 
-  def sfc_rare_mythic(set_code)
+  def sfc_rare_or_mythic(set_code)
     mix_sheets(
       [from_query("e:#{set_code} r:rare -is:dfc -is:meld"), 2],
       [from_query("e:#{set_code} r:mythic -is:dfc -is:meld"), 1],
@@ -234,7 +231,7 @@ class CardSheetFactory
   end
 
   def tsts
-    from_query("e:tsb", 121)
+    from_query("e:tsts", 121)
   end
 
   # Can't find any information.
@@ -242,11 +239,11 @@ class CardSheetFactory
   # and tsts replaces 1/4 of foil commons
   def ts_foil
     sheets = [
-      rarity("tsp", "rare", foil: true),
-      rarity("tsp", "uncommon", foil: true),
-      rarity("tsp", "basic", foil: true),
-      rarity("tsp", "common", foil: true),
-      from_query("e:tsb", 121, foil: true),
+      rarity("ts", "rare", foil: true),
+      rarity("ts", "uncommon", foil: true),
+      rarity("ts", "basic", foil: true),
+      rarity("ts", "common", foil: true),
+      from_query("e:tsts", 121, foil: true),
     ]
     weights = [
       1,
@@ -260,19 +257,19 @@ class CardSheetFactory
 
 
   def pc_common
-    from_query("e:plc r:common -is:colorshifted", 40)
+    from_query("e:pc r:common -is:colorshifted", 40)
   end
 
   def pc_uncommon
-    from_query("e:plc r:uncommon -is:colorshifted", 40)
+    from_query("e:pc r:uncommon -is:colorshifted", 40)
   end
 
   def pc_rare
-    from_query("e:plc r:rare -is:colorshifted", 40)
+    from_query("e:pc r:rare -is:colorshifted", 40)
   end
 
   def pc_cs_common
-    from_query("e:plc r:common is:colorshifted", 20)
+    from_query("e:pc r:common is:colorshifted", 20)
   end
 
   def pc_cs_uncommon_rare
@@ -281,8 +278,8 @@ class CardSheetFactory
     # due to the relative numbers of each in the set"
     # This translates to 40 card 15xU2/10xU1 style sheet
     mix_sheets(
-      [from_query("e:plc r:uncommon is:colorshifted", 15), 2],
-      [from_query("e:plc r:rare is:colorshifted", 10), 1],
+      [from_query("e:pc r:uncommon is:colorshifted", 15), 2],
+      [from_query("e:pc r:rare is:colorshifted", 10), 1],
     )
   end
 
@@ -340,56 +337,25 @@ class CardSheetFactory
   # These are legendary creatures only according to maro
   # not planeswalkers or other legendaries
   def dom_legendary_uncommon
-    from_query('e:dom t:"legendary creature" r:uncommon', 20)
+    from_query('e:dom is:booster t:"legendary creature" r:uncommon', 20)
   end
 
   def dom_nonlegendary_uncommon
-    from_query('e:dom -t:"legendary creature" r:uncommon', 60)
+    from_query('e:dom is:booster -t:"legendary creature" r:uncommon', 60)
   end
 
   def dom_legendary_rare_mythic
     mix_sheets(
-      [from_query('e:dom t:"legendary creature" r:rare', 14), 2],
-      [from_query('e:dom t:"legendary creature" r:mythic', 8), 1],
+      [from_query('e:dom is:booster t:"legendary creature" r:rare', 14), 2],
+      [from_query('e:dom is:booster t:"legendary creature" r:mythic', 8), 1],
     )
   end
 
   def dom_nonlegendary_rare_mythic
     mix_sheets(
-      [from_query('e:dom -t:"legendary creature" r:rare', 39), 2],
-      [from_query('e:dom -t:"legendary creature" r:mythic', 7), 1],
+      [from_query('e:dom is:booster -t:"legendary creature" r:rare', 39), 2],
+      [from_query('e:dom is:booster -t:"legendary creature" r:mythic', 7), 1],
     )
-  end
-
-  def war_planeswalker_uncommon
-    from_query('e:war t:planeswalker r:uncommon -number:/★/', 20)
-  end
-
-  def war_nonplaneswalker_uncommon
-    from_query('e:war -t:planeswalker r:uncommon', 60)
-  end
-
-  def war_planeswalker_rare_mythic
-    mix_sheets(
-      [from_query('e:war t:planeswalker r:rare -number:/★/', 13), 2],
-      [from_query('e:war t:planeswalker r:mythic -number:/★/', 3), 1],
-    )
-  end
-
-  def war_nonplaneswalker_rare_mythic
-    mix_sheets(
-      [from_query('e:war -t:planeswalker r:rare', 40), 2],
-      [from_query('e:war -t:planeswalker r:mythic', 12), 1],
-    )
-  end
-
-  def war_foil
-    m = from_query("e:war r:mythic -number:/★/", 15, foil: true)
-    r = from_query("e:war r:rare -number:/★/", 53, foil: true)
-    u = from_query("e:war r:uncommon -number:/★/", 80, foil: true)
-    c = common_or_basic("war", foil: true)
-    mr = mix_sheets([r, 2], [m, 1])
-    CardSheet.new([mr, u, c], [4, 8, 20])
   end
 
   def cns_draft_foil
@@ -408,7 +374,7 @@ class CardSheetFactory
     sheets = [
       cns_nondraft_common(true),
       cns_nondraft_uncommon(true),
-      cns_nondraft_rare_mythic(true),
+      cns_nondraft_rare_or_mythic(true),
     ]
     weights = [
       5,
@@ -419,187 +385,17 @@ class CardSheetFactory
   end
 
   def cns_nondraft_common(foil=false)
-    from_query('e:cns -is:draft r:common', 80, foil: foil, kind: ColorBalancedCardSheet)
+    from_query('e:cns -is:draft r:common', 80, foil: foil)
   end
 
   def cns_nondraft_uncommon(foil=false)
     from_query('e:cns -is:draft r:uncommon', 60, foil: foil)
   end
 
-  def cns_nondraft_rare_mythic(foil=false)
+  def cns_nondraft_rare_or_mythic(foil=false)
     mix_sheets(
       [from_query('e:cns -is:draft r:rare', 35, foil: foil), 2],
       [from_query('e:cns -is:draft r:mythic', 10, foil: foil), 1],
     )
-  end
-
-  def cn2_conspiracy_foil
-    cn2_conspiracy(true)
-  end
-
-  def cn2_conspiracy(foil=false)
-    mix_sheets(
-      [from_query('e:cn2 t:conspiracy r:common', 5, foil: foil), 8],
-      [from_query('e:cn2 t:conspiracy r:uncommon', 2, foil: foil), 4],
-      [from_query('e:cn2 t:conspiracy r:rare', 3, foil: foil), 2],
-      [from_query('e:cn2 t:conspiracy r:mythic', 2, foil: foil), 1],
-    )
-  end
-
-  def cn2_nonconspiracy_foil
-    sheets = [
-      cn2_nonconspiracy_common(true),
-      cn2_nonconspiracy_uncommon(true),
-      cn2_nonconspiracy_rare_mythic(true),
-    ]
-    weights = [
-      5,
-      2,
-      1,
-    ]
-    CardSheet.new(sheets, weights)
-  end
-
-  def cn2_nonconspiracy_common(foil=false)
-    from_query('e:cn2 -t:conspiracy r:common', 85, foil: foil, kind: ColorBalancedCardSheet)
-  end
-
-  def cn2_nonconspiracy_uncommon(foil=false)
-    from_query('e:cn2 -t:conspiracy r:uncommon', 65, foil: foil)
-  end
-
-  def cn2_nonconspiracy_rare_mythic(foil=false)
-    foilcond = foil ? "-is:nonfoilonly" : "-is:foilonly"
-    mix_sheets(
-      [from_query('e:cn2 -t:conspiracy r:rare', 47, foil: foil), 2],
-      [from_query("e:cn2 -t:conspiracy r:mythic #{foilcond}", 12, foil: foil), 1],
-    )
-  end
-
-  def grn_common
-    from_query("e:grn r:common not:guildgate", kind: ColorBalancedCardSheet)
-  end
-
-  def grn_land
-    from_query("e:grn is:guildgate", 10)
-  end
-
-  def rna_common
-    from_query("e:rna r:common not:guildgate", kind: ColorBalancedCardSheet)
-  end
-
-  def rna_land
-    from_query("e:rna is:guildgate", 10)
-  end
-
-  def bbd_uncommon(foil=false)
-    from_query("e:bbd r:uncommon -has:partner", 70, foil: foil)
-  end
-
-  def bbd_uncommon_partner(foil=false)
-    from_query("e:bbd r:uncommon has:partner", 10, foil: foil, kind: PartnerCardSheet)
-  end
-
-  def bbd_rare_mythic(foil=false)
-    mix_sheets(
-      [from_query('e:bbd -has:partner r:rare', 43, foil: foil), 2],
-      [from_query('e:bbd -has:partner r:mythic', 13, foil: foil), 1],
-    )
-  end
-
-  def bbd_rare_mythic_partner
-    sheets = [
-      from_query("e:bbd r:rare has:partner", 10, kind: PartnerCardSheet),
-      from_query("e:bbd r:mythic has:partner is:nonfoilonly", 2, kind: PartnerCardSheet),
-    ]
-    weights = [
-      10,
-      1,
-    ]
-    MixedPartnerCardSheet.new(sheets, weights)
-  end
-
-  # These foil rates are pretty much total :poopemoji:
-  def bbd_foil
-    sheets = [
-      from_query("e:bbd (r:common or r:basic)", 101 + 5, foil: true),
-      bbd_uncommon(true),
-      bbd_rare_mythic(true),
-    ]
-    weights = [
-      5,
-      2,
-      1,
-    ]
-    CardSheet.new(sheets, weights)
-  end
-
-  def bbd_foil_partner
-    sheets = [
-      from_query("e:bbd r:uncommon has:partner", 10, foil: true, kind: PartnerCardSheet),
-      from_query("e:bbd r:rare has:partner", 10, foil: true, kind: PartnerCardSheet),
-      from_query("e:bbd r:mythic has:partner is:foilonly", 2, foil: true, kind: PartnerCardSheet),
-    ]
-    weights = [
-      20,
-      10,
-      1,
-    ]
-    MixedPartnerCardSheet.new(sheets, weights)
-  end
-
-  def ust_basic(foil: false)
-    mix_sheets(
-      [from_query('e:ust r:basic', 5, foil: foil), 24],
-      [from_query("e:ust border:black", 1, foil: foil), 1],
-    )
-  end
-
-  def ust_basic_foil
-    ust_basic(foil: true)
-  end
-
-  def ust_common(foil: false)
-    from_query("e:ust r:common -t:contraption", 82, foil: foil)
-  end
-
-  def ust_uncommon(foil: false)
-    from_query("e:ust r:uncommon -t:contraption", 75, foil: foil)
-  end
-
-  def ust_rare_mythic(foil: false)
-    mix_sheets(
-      [from_query('e:ust -t:contraption -border:black r:rare', 50, foil: foil), 2],
-      [from_query('e:ust -t:contraption r:mythic', 10, foil: foil), 1],
-    )
-  end
-
-  # Numbers are totally made up
-  # Maybe some rarity is actually not exact?
-  def ust_contraption(foil: false)
-    mix_sheets(
-      [from_query('e:ust t:contraption r:common', 15, foil: foil), 8],
-      [from_query('e:ust t:contraption r:uncommon', 15, foil: foil), 4],
-      [from_query('e:ust t:contraption r:rare', 10, foil: foil), 2],
-      [from_query('e:ust t:contraption r:mythic', 5, foil: foil), 1],
-    )
-  end
-
-  def ust_contraption_foil
-    ust_contraption(foil: true)
-  end
-
-  def ust_foil
-    sheets = [
-      ust_common(foil: true),
-      ust_uncommon(foil: true),
-      ust_rare_mythic(foil: true),
-    ]
-    weights = [
-      5,
-      2,
-      1,
-    ]
-    CardSheet.new(sheets, weights)
   end
 end

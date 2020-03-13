@@ -10,11 +10,7 @@ describe PhysicalCard do
   it "all sets can return list of physical cards" do
     db.sets.each do |set_code, set|
       # Need to .uniq as meld appears twice on the left side and once on the right side
-      # Also because of foils
-      [*set.physical_cards(true), *set.physical_cards(false)]
-        .flat_map{|c| [*c.front, *c.back]}
-        .uniq
-        .should match_array(set.printings)
+      set.physical_cards.flat_map{|c| [*c.front, *c.back]}.uniq.should match_array(set.printings)
     end
   end
 
@@ -67,17 +63,6 @@ describe PhysicalCard do
   context "aftermath" do
     let(:card1) { find_unique("appeal e:hou") }
     let(:card2) { find_unique("authority e:hou") }
-    it do
-      physical_card1.should eq(physical_card2)
-      physical_card1.front.should eq([card1, card2])
-      physical_card1.back.should eq([])
-      physical_card1.foil.should eq(false)
-    end
-  end
-
-  context "adventure" do
-    let(:card1) { find_unique("beanstack giant e:eld") }
-    let(:card2) { find_unique("fertile footsteps e:eld") }
     it do
       physical_card1.should eq(physical_card2)
       physical_card1.front.should eq([card1, card2])

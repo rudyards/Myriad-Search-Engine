@@ -1,6 +1,6 @@
-class ConditionIsGainland < ConditionNickname
-  def names
-    [
+class ConditionIsGainland < Condition
+  def search(db)
+    names = [
       "akoum refuge",
       "bloodfell caves",
       "blossoming sands",
@@ -17,6 +17,11 @@ class ConditionIsGainland < ConditionNickname
       "tranquil cove",
       "wind-scarred crag",
     ]
+
+    names
+      .map{|n| db.cards[n]}
+      .flat_map{|card| card ? card.printings : []}
+      .to_set
   end
 
   def to_s

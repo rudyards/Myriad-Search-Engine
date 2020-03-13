@@ -1,28 +1,27 @@
 class CardSet
-  attr_reader :name, :code, :alternative_code, :gatherer_code
-  attr_reader :block_name, :block_code, :alternative_block_code
-  attr_reader :border, :release_date, :printings, :types
-  attr_reader :decks
+  attr_reader :name, :code, :official_code, :gatherer_code
+  attr_reader :block_name, :block_code, :official_block_code
+  attr_reader :border, :frame, :release_date, :printings, :type
+  attr_reader :decks, :foiling
 
   def initialize(db, data)
     @db = db
     @name          = data["name"]
     @code          = data["code"]
-    @alternative_code = data["alternative_code"]
+    @official_code = data["official_code"]
     @gatherer_code = data["gatherer_code"]
     @block_name    = data["block_name"]
     @block_code    = data["block_code"]&.downcase
-    @alternative_block_code = data["alternative_block_code"]&.downcase
+    @official_block_code = data["official_block_code"]&.downcase
     @border        = data["border"]
-    @types         = data["types"]
+    @frame         = data["frame"]
+    @type          = data["type"]
     @release_date  = data["release_date"] && Date.parse(data["release_date"])
     @printings     = Set[]
     @online_only   = !!data["online_only"]
     @has_boosters  = !!data["has_boosters"]
-    @in_other_boosters = !!data["in_other_boosters"]
-    @custom        = !!data["custom"]
-    @funny         = !!data["funny"]
     @decks         = []
+    @foiling       = data["foiling"]
   end
 
   def cards_in_precons
@@ -33,25 +32,12 @@ class CardSet
     @has_boosters
   end
 
-  def in_other_boosters?
-    @in_other_boosters
-  end
-
   def online_only?
     @online_only
   end
 
-  def custom?
-    !!@custom
-  end
-
-  def funny?
-    !!@funny
-  end
-
-  # counting MH1 in addition to core sets and expansions
   def regular?
-    @types.include?("standard") or @types.include?("modern")
+    @type == "core" or @type == "expansion"
   end
 
   include Comparable
@@ -63,27 +49,10 @@ class CardSet
     @code.hash
   end
 
-  def deck_named(name)
-    @decks.find{|d| d.name == name}
-  end
-
   def physical_cards(foil=false)
-    @printings
-      .select do |card|
-        if foil
-          card.foiling != "nonfoil"
-        else
-          card.foiling != "foilonly"
-        end
-      end
-      .map do |card|
-        PhysicalCard.for(card, foil)
-      end
-      .uniq
-  end
-
-  def physical_card_names
-    [*physical_cards(true), *physical_cards(false)].map(&:name).uniq
+    @printings.map do |card|
+      PhysicalCard.for(card, foil)
+    end.uniq
   end
 
   def physical_cards_in_boosters(foil=false)

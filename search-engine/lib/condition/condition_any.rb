@@ -1,6 +1,4 @@
 class ConditionAny < ConditionOr
-  attr_reader :query
-
   def initialize(query)
     @query = query.downcase
     @conds = [
@@ -33,16 +31,12 @@ class ConditionAny < ConditionOr
       )
     when "augment"
       @conds << ConditionIsAugment.new
-    when "battleland", "tangoland"
+    when "battleland"
       @conds << ConditionIsBattleland.new
-    when "bounceland", "karoo"
+    when "bounceland"
       @conds << ConditionIsBounceland.new
-    when "canopyland", "canland"
-      @conds << ConditionIsCanopyland.new
     when "checkland"
       @conds << ConditionIsCheckland.new
-    when "colorshifted"
-      @conds << ConditionIsColorshifted.new
     when "commander" # ???
       @conds << ConditionIsCommander.new
     when "digital"
@@ -61,26 +55,16 @@ class ConditionAny < ConditionOr
       @conds << ConditionIsFunny.new
     when "gainland"
       @conds << ConditionIsGainland.new
-    when "keywordsoup"
-      @conds << ConditionIsKeywordsoup.new
-    when "manland", "creatureland"
+    when "manland"
       @conds << ConditionIsManland.new
     when "multipart"
       @conds << ConditionIsMultipart.new
-    when "painland"
-      @conds << ConditionIsPainland.new
     when "permanent"
       @conds << ConditionIsPermanent.new
     when "primary"
       @conds << ConditionIsPrimary.new
     when "secondary"
       @conds << ConditionIsSecondary.new
-    when "shadowland"
-      @conds << ConditionIsShadowland.new
-    when "storageland"
-      @conds << ConditionIsStorageland.new
-    when "triland"
-      @conds << ConditionIsTriland.new
     when "front"
       @conds << ConditionIsFront.new
     when "back"
@@ -95,8 +79,8 @@ class ConditionAny < ConditionOr
       @conds << ConditionIsReserved.new
     when "scryland"
       @conds << ConditionIsScryland.new
-    when "shockland"
-      @conds << ConditionIsShockland.new
+    when "shockfetch"
+      @conds << ConditionIsShockfetch.new
     when "spell"
       @conds << ConditionIsSpell.new
     when "timeshifted"
@@ -111,10 +95,5 @@ class ConditionAny < ConditionOr
 
   def to_s
     "any:#{maybe_quote(@query)}"
-  end
-
-  def ==(other)
-    self.class == other.class and
-      self.query == other.query
   end
 end

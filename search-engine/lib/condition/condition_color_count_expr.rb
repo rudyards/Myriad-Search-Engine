@@ -8,10 +8,6 @@ class ConditionColorCountExpr < ConditionSimple
   def match?(card)
     if @a == "c"
       a = card.colors.size
-    elsif @a == "ind"
-      a = card.color_indicator_set
-      return false unless a
-      a = a.size
     else
       a = card.color_identity.size
     end

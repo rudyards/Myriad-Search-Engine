@@ -19,7 +19,7 @@ class ConditionFormat < Condition
       cards_probably_in_format = db.cards.values
     end
     cards_probably_in_format.select do |card|
-      card_ok?(card)
+      legality_ok?(@format.legality(card))
     end.flat_map(&:printings).to_set
   end
 
@@ -34,7 +34,7 @@ class ConditionFormat < Condition
 
   private
 
-  def card_ok?(card)
-    @format.legal_or_restricted?(card)
+  def legality_ok?(legality)
+    legality == "legal" or legality == "restricted"
   end
 end

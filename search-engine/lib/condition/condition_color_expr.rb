@@ -8,9 +8,6 @@ class ConditionColorExpr < ConditionSimple
   def match?(card)
     if @a == "c"
       a = card.colors.chars.to_set
-    elsif @a == "ind"
-      a = card.color_indicator_set
-      return false unless a
     else
       a = card.color_identity.chars.to_set
     end
@@ -32,8 +29,6 @@ class ConditionColorExpr < ConditionSimple
   end
 
   def to_s
-    b = (["w", "u", "b", "r", "g"] & @b.to_a).join
-    b = "c" if b == ""
-    "#{@a}#{@op}#{b}"
+    "#{@a}#{@op}#{(["w", "u", "b", "r", "g"] & @b.to_a).join}"
   end
 end

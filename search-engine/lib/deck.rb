@@ -1,35 +1,24 @@
 class Deck
-  attr_reader :cards, :sideboard
-
-  def initialize(cards, sideboard)
+  attr_reader :set, :name, :type, :cards, :sideboard, :slug
+  def initialize(set, name, type, cards, sideboard)
+    @set = set
+    @name = name
+    @type = type
     @cards = cards
     @sideboard = sideboard
+    @slug = @name.downcase.gsub("'s", "s").gsub(/[^a-z0-9s]+/, "-")
   end
 
   def cards_with_sideboard
-    result = Hash.new(0)
-    [*@cards, *@sideboard].each do |number, card|
-      result[card] += number
-    end
-    result.map(&:reverse)
-  end
-
-  def card_counts
-    result = {}
-    cards_with_sideboard.each do |number, physical_card|
-      card = physical_card.main_front.card
-      result[card] ||= [physical_card.name, 0]
-      result[card][1] += number
-    end
-    result.map{|card,(name,number)| [card, name, number] }
+    @cards + @sideboard
   end
 
   def number_of_mainboard_cards
-    @cards.sum(&:first)
+    @cards.map(&:first).inject(0, &:+)
   end
 
   def number_of_sideboard_cards
-    @sideboard.sum(&:first)
+    @sideboard.map(&:first).inject(0, &:+)
   end
 
   def number_of_total_cards
@@ -40,42 +29,40 @@ class Deck
     [*@cards.map(&:last), *@sideboard.map(&:last)].uniq
   end
 
-  def physical_card_names
-    physical_cards.map(&:name).uniq
+  def inspect
+    "Deck<#{set.name} - #{@name} - #{@type}>"
   end
 
-  def valid_commander?
-    case number_of_sideboard_cards
-    when 1
-      a = @sideboard[0][1]
-      a.commander?
-    when 2
-      return false unless @sideboard.size == 2 # 2x same card is not valid
-      a = @sideboard[0][1]
-      b = @sideboard[1][1]
-      a.commander? and b.commander? and a.valid_partner_for?(b)
-    else
-      false
+  def all_set_codes
+    @all_set_codes ||= [*@cards, *@sideboard].map{|_,card| card.set_code}.to_set
+  end
+
+  def set_code
+    @set.code
+  end
+
+  def set_name
+    @set.name
+  end
+
+  def to_s
+    inspect
+  end
+
+  def to_text
+    output = []
+    output << "// NAME: #{@name} - #{@set.name} #{@type}"
+    output << "// URL: http://hub-of-innovation.herokuapp.com/deck/#{set.code}/#{slug}"
+    @cards.each do |count, card|
+      output << "#{count} #{card}"
     end
-  end
-
-  def valid_brawler?
-    case number_of_sideboard_cards
-    when 1
-      a = @sideboard[0][1]
-      a.brawler?
-    when 2
-      return false unless @sideboard.size == 2 # 2x same card is not valid
-      a = @sideboard[0][1]
-      b = @sideboard[1][1]
-      a.brawler? and b.brawler? and a.valid_partner_for?(b)
-    else
-      false
+    unless @sideboard.empty?
+      output << ""
+      output << "Sideboard"
+      @sideboard.each do |count, card|
+        output << "#{count} #{card}"
+      end
     end
-  end
-
-  def color_identity
-    return nil unless number_of_sideboard_cards.between?(1, 2)
-    @sideboard.map{|n,c| c.color_identity}.inject{|c1, c2| (c1.chars | c2.chars).sort.join }
+    output.join("\n") + "\n"
   end
 end

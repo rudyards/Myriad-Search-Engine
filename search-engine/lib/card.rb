@@ -5,55 +5,10 @@ require_relative "ban_list"
 require_relative "legality_information"
 
 class Card
-  ABILITY_WORD_LIST = [
-    "Adamant",
-    "Addendum",
-    "Battalion",
-    "Bloodrush",
-    "Channel",
-    "Chroma",
-    "Cohort",
-    "Constellation",
-    "Converge",
-    "Council's dilemma",
-    "Delirium",
-    "Domain",
-    "Eminence",
-    "Enrage",
-    "Fateful hour",
-    "Ferocious",
-    "Formidable",
-    "Gotcha",
-    "Grandeur",
-    "Hellbent",
-    "Hero's Reward",
-    "Heroic",
-    "Imprint",
-    "Inspired",
-    "Join forces",
-    "Kinfall",
-    "Kinship",
-    "Landfall",
-    "Landship",
-    "Legacy",
-    "Lieutenant",
-    "Metalcraft",
-    "Morbid",
-    "Parley",
-    "Radiance",
-    "Raid",
-    "Rally",
-    "Requirement",
-    "Revolt",
-    "Spell mastery",
-    "Strive",
-    "Sweep",
-    "Tempting offer",
-    "Threshold",
-    "Underdog",
-    "Undergrowth",
-    "Will of the council",
-  ]
+  ABILITY_WORD_LIST = ["Battalion", "Bloodrush", "Channel", "Chroma", "Cohort", "Constellation", "Converge", "Council's dilemma", "Delirium", "Domain",
+       "Eminence", "Enrage", "Fateful hour", "Ferocious", "Formidable", "Gotcha", "Grandeur", "Hellbent", "Heroic", "Imprint", "Inspired", "Join forces",
+       "Kinship", "Landfall", "Lieutenant", "Metalcraft", "Morbid", "Parley", "Radiance", "Raid", "Rally", "Revolt", "Spell mastery", "Strive", "Sweep",
+       "Tempting offer", "Threshold", "Will of the council"]
   ABILITY_WORD_RX = %r[^(#{Regexp.union(ABILITY_WORD_LIST)}) —]i
 
   attr_reader :data, :printings
@@ -62,13 +17,13 @@ class Card
   attr_reader :name, :names, :layout, :colors, :mana_cost, :reserved, :types
   attr_reader :partial_color_identity, :cmc, :text, :text_normalized, :power, :toughness, :loyalty, :extra
   attr_reader :hand, :life, :rulings, :foreign_names, :foreign_names_normalized, :stemmed_name
-  attr_reader :mana_hash, :typeline, :funny, :color_indicator, :color_indicator_set, :related
+  attr_reader :mana_hash, :typeline, :funny, :color_indicator, :related
   attr_reader :reminder_text, :augment, :display_power, :display_toughness, :display_mana_cost
 
   def initialize(data)
     @printings = []
     @name = data["name"]
-    @stemmed_name = -@name.downcase.normalize_accents.gsub(/s\b/, "").tr("-", " ")
+    @stemmed_name = normalize_name(@name).downcase.gsub(/s\b/, "").tr("-", " ")
     @names = data["names"]
     @layout = data["layout"]
     @colors = data["colors"] || ""
@@ -76,7 +31,7 @@ class Card
     @text = (data["text"] || "")
     @text = @text.gsub(/\s*\([^\(\)]*\)/, "") unless @funny
     @text = -@text.sub(/\s*\z/, "").gsub(/ *\n/, "\n").sub(/\A\s*/, "")
-    @text_normalized = -@text.normalize_accents
+    @text_normalized = -@text.gsub("Æ", "Ae").tr("Äàáâäèéêíõöúûü’\u2212", "Aaaaaeeeioouuu'-")
     @augment = !!(@text =~ /augment \{/i)
     @mana_cost = data["manaCost"]
     @reserved = data["reserved"] || false
@@ -90,8 +45,8 @@ class Card
     @display_power = data["display_power"] ? data["display_power"] : @power
     @display_toughness = data["display_toughness"] ? data["display_toughness"] : @toughness
     @display_mana_cost = data["hide_mana_cost"] ? nil : @mana_cost
-    # @partial_color_identity = calculate_partial_color_identity
-    if ["vanguard", "planar", "scheme"].include?(@layout) or @types.include?("conspiracy")
+    @partial_color_identity = calculate_partial_color_identity
+    if ["vanguard", "plane", "scheme", "phenomenon"].include?(@layout) or @types.include?("conspiracy")
       @extra = true
     else
       @extra = false
@@ -100,7 +55,6 @@ class Card
     @life = data["life"]
     @rulings = data["rulings"]
     @secondary = data["secondary"]
-    @partner = data["is_partner"]
     if data["foreign_names"]
       @foreign_names = data["foreign_names"].map{|k,v| [k.to_sym,v]}.to_h
     else
@@ -117,16 +71,12 @@ class Card
     end
     @typeline = -@typeline
     calculate_mana_hash
-    # calculate_color_indicator
+    calculate_color_indicator
     calculate_reminder_text
   end
 
-  def partner?
-    !!@partner
-  end
-
   def front?
-    !@secondary or @layout == "aftermath" or @layout == "flip" or @layout == "adventure"
+    !@secondary or @layout == "aftermath" or @layout == "flip"
   end
 
   def back?
@@ -144,16 +94,9 @@ class Card
   attr_writer :color_identity
   def color_identity
     @color_identity ||= begin
-      # return partial_color_identity unless @names
+      return partial_color_identity unless @names
       raise "Multi-part cards need to have CI set by database"
     end
-  end
-
-  def custom?
-    # a card is custom if it has been printed in at least one custom set (to exclude uncards)...
-    return false unless printings.any? { |printing| printing.set.custom? }
-    # ...and hasn't been printed in an official black-border set (to exclude custom reprints of official cards)
-    printings.all? { |printing| printing.set.custom? or printing.set.funny? }
   end
 
   def has_multiple_parts?
@@ -183,7 +126,7 @@ class Card
 
   def first_regular_release_date
     @first_regular_release_date ||= @printings
-      .select{|cp| cp.set_code != "ppre"}
+      .select{|cp| cp.set_code != "ptc"}
       .map(&:release_date)
       .compact
       .min
@@ -191,27 +134,6 @@ class Card
 
   def last_release_date
     @last_release_date ||= @printings.map(&:release_date).compact.max
-  end
-
-  def allowed_in_any_number?
-    @types.include?("basic") or (
-      @text and @text.include?("A deck can have any number of cards named")
-    )
-  end
-
-  def commander?
-    return false if @secondary
-    return true if @types.include?("legendary") and @types.include?("creature")
-    if @types.include?("planeswalker")
-      return true if @text.include?("can be your commander")
-    end
-    false
-  end
-
-  def brawler?
-    return false if @secondary
-    return true if @types.include?("legendary") and (@types.include?("creature") or @types.include?("planeswalker"))
-    false
   end
 
   private
@@ -228,7 +150,7 @@ class Card
       case m
       when /\A\d+\z/
         @mana_hash["?"] += m.to_i
-      when /\A[wubrgxyzcs]\z/
+      when /\A[wubrgxyzc]\z/
         # x is basically a color for this kind of queries
         @mana_hash[m] += 1
       when /\Ah([wubrg])\z/
@@ -251,8 +173,12 @@ class Card
     -sym.downcase.tr("/{}", "").chars.sort.join
   end
 
+  def normalize_name(name)
+    -name.gsub("Æ", "Ae").tr("Äàáâäèéêíõöúûü", "Aaaaaeeeioouuu")
+  end
+
   def hard_normalize(s)
-    -s.unicode_normalize(:nfd).gsub(/\p{Mn}/, "").downcase
+    -UnicodeUtils.downcase(UnicodeUtils.nfd(s).gsub(/\p{Mn}/, ""))
   end
 
   def smart_convert_powtou(val)
@@ -269,7 +195,7 @@ class Card
       # "*" < "*²" < "1+*" < "2+*"
       # but let's not get anywhere near that
       case val
-      when "*", "*²", "1+*", "2+*", "7-*", "X", "∞", "?", "1d4+1"
+      when "*", "*²", "1+*", "2+*", "7-*", "X", "∞", "?", "*+1", "*+2"
         val
       else
         raise "Unrecognized value #{val.inspect}"
@@ -281,67 +207,84 @@ class Card
     end
   end
 
-  # def calculate_partial_color_identity
-  #   ci = colors.chars
-  #   "#{mana_cost} #{text}".scan(/{(.*?)}/).each do |sym,|
-  #     case sym.downcase
-  #     when /\A(\d+|[½∞txyzsqpce])\z/
-  #       # 12xyz - colorless
-  #       # ½∞ - unset colorless
-  #       # t - tap
-  #       # q - untap
-  #       # s - snow
-  #       # p - generic Phyrexian mana (like on Rage Extractor text)
-  #       # c - colorless mana
-  #     when /\A([wubrg])\z/
-  #       ci << $1
-  #     when /\A([wubrg])\/p\z/
-  #       # Phyrexian mana
-  #       ci << $1
-  #     when /\Ah([wubrg])\z/
-  #       # Unset half colored mana
-  #       ci << $1
-  #     when /\A2\/([wubrg])\z/
-  #       ci << $1
-  #     when /\A([wubrg])\/([wubrg])\z/
-  #       ci << $1 << $2
-  #     when "chaos"
-  #       # planechase special symbol, disregard
-  #     else
-  #       raise "Unknown mana symbol `#{sym}'"
-  #     end
-  #   end
-  #   types.each do |t|
-  #     tci = {"forest" => "g", "mountain" => "r", "plains" => "w", "island" => "u", "swamp" => "b"}[t]
-  #     ci << tci if tci
-  #   end
-  #   -ci.sort.uniq.join
-  # end
+  def calculate_partial_color_identity
+    ci = colors.chars
+    "#{mana_cost} #{text}".scan(/{(.*?)}/).each do |sym,|
+      case sym.downcase
+      when /\A(\d+|[½∞txyzsqpce])\z/
+        # 12xyz - colorless
+        # ½∞ - unset colorless
+        # t - tap
+        # q - untap
+        # s - snow
+        # p - generic Phyrexian mana (like on Rage Extractor text)
+        # c - colorless mana
+      when /\A([wubrg])\z/
+        ci << $1
+      when /\A([wubrg])\/p\z/
+        # Phyrexian mana
+        ci << $1
+      when /\Ah([wubrg])\z/
+        # Unset half colored mana
+        ci << $1
+      when /\A2\/([wubrg])\z/
+        ci << $1
+      when /\A([wubrg])\/([wubrg])\z/
+        ci << $1 << $2
+      when "chaos"
+        # planechase special symbol, disregard
+      else
+        raise "Unknown mana symbol `#{sym}'"
+      end
+    end
+    types.each do |t|
+      tci = {"forest" => "g", "mountain" => "r", "plains" => "w", "island" => "u", "swamp" => "b"}[t]
+      ci << tci if tci
+    end
+    -ci.sort.uniq.join
+  end
 
-  # def calculate_color_indicator
-  #   colors_inferred_from_mana_cost = (@mana_hash || {}).keys
-  #     .flat_map do |x|
-  #       next [] if x =~ /[?xyzcs]/
-  #       x = x.sub(/[p2]/, "")
-  #       if x =~ /\A[wubrg]+\z/
-  #         x.chars
-  #       else
-  #         raise "Unknown mana cost: #{x}"
-  #       end
-  #     end
-  #     .uniq
+  def calculate_color_indicator
+    colors_inferred_from_mana_cost = (@mana_hash || {}).keys
+      .flat_map do |x|
+        next [] if x =~ /[?xyzc]/
+        x = x.sub(/[p2]/, "")
+        if x =~ /\A[wubrg]+\z/
+          x.chars
+        else
+          raise "Unknown mana cost: #{x}"
+        end
+      end
 
-  #   actual_colors = @colors.chars
+    actual_colors = @colors.chars
 
-  #   if colors_inferred_from_mana_cost.sort == actual_colors.sort
-  #     @color_indicator = nil
-  #   else
-  #     @color_indicator = Color.color_indicator_name(actual_colors)
-  #   end
-  #   if @color_indicator
-  #     @color_indicator_set = actual_colors.to_set
-  #   end
-  # end
+    if colors_inferred_from_mana_cost.sort == actual_colors.sort
+      @color_indicator = nil
+    else
+      @color_indicator = color_indicator_name(actual_colors)
+    end
+  end
+
+  def color_indicator_name(indicator)
+    names = {"w" => "white", "u" => "blue", "b" => "black", "r" => "red", "g" => "green"}
+    color_indicator = names.map{|c,cv| indicator.include?(c) ? cv : nil}.compact
+    case color_indicator.size
+    when 5
+      "all colors"
+    when 1, 2
+      color_indicator.join(" and ")
+    when 3
+      # Nicol Bolas from M19
+      a, b, c = color_indicator
+      "#{a}, #{b}, and #{c}"
+    when 0
+      # devoid and Ghostfire - for some reason they use rules text, not color indicator
+      # "colorless"
+      nil
+    else # find phrasing for 3/4 colors
+      raise
+    end
+  end
 
   def calculate_reminder_text
     @reminder_text = nil

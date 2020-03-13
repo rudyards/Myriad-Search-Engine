@@ -1,4 +1,4 @@
-describe "mana cost queries" do
+describe "Full Database Test" do
   include_context "db"
 
   it "no mana cost" do

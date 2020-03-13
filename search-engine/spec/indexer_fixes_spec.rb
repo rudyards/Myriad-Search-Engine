@@ -3,14 +3,14 @@ describe "Indexer Fixes Test" do
 
   it "rqs" do
     %W[basic common uncommon rare].each do |rarity|
-      (search_names("e:rqs r:#{rarity}") - search_names("e:4e r:#{rarity}")).should be_empty
+      (search("e:rqs r:#[rarity}") - search("e:4e r:#[rarity}")).should be_empty
     end
     search("e:rqs -r:rare -r:uncommon -r:common -r:basic").should be_empty
   end
 
   it "itp" do
     %W[basic common uncommon rare].each do |rarity|
-      (search_names("e:rqs r:#{rarity}") - search_names("e:4e r:#{rarity}")).should be_empty
+      (search("e:rqs r:#[rarity}") - search("e:4e r:#[rarity}")).should be_empty
     end
     search("e:itp -r:rare -r:uncommon -r:common -r:basic").should be_empty
   end
@@ -87,6 +87,11 @@ describe "Indexer Fixes Test" do
 
   it "No unknown artists" do
     assert_search_results %Q[a:"?"]
+  end
+
+  it "All draft-matters cards have conspiracy watermark" do
+    # Is there official name for it?
+    assert_search_equal %Q[w:draft], %Q[is:draft]
   end
 
   # Some old issues fixed since then, but extra regression tests won't hurt

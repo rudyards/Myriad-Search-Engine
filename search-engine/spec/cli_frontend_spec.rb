@@ -20,7 +20,6 @@ describe "CLI Frontend" do
         Cinder Glade
         Dryad Arbor
         Forest
-        Gingerbread Cabin
         Murmuring Bosk
         Overgrown Tomb
         Sapseep Forest
@@ -43,7 +42,7 @@ describe "CLI Frontend" do
       verbose: true,
       output: <<-EOF,
         Jace Beleren {1}{u}{u}
-        [lrw dd2 dd2 pbok m10 m11 jvc ss1 prm]
+        [lw jvc mbp m10 m11 ddajvc ss1]
         Legendary Planeswalker - Jace
         [+2]: Each player draws a card.
         [−1]: Target player draws a card.
@@ -57,7 +56,7 @@ describe "CLI Frontend" do
       verbose: true,
       output: <<-EOF,
         Siege Rhino {1}{w}{b}{g}
-        [ktk pktk cp3 prm]
+        [ptc ktk cp3]
         Creature - Rhino
         Trample
         When Siege Rhino enters the battlefield, each opponent loses 3 life and you gain 3 life.
@@ -73,14 +72,14 @@ describe "CLI Frontend" do
       verbose: true,
       output: <<-EOF,
         Canopy Dragon {4}{g}{g}
-        [mir]
+        [mr]
         Creature - Dragon
         Trample
         {1}{G}: Canopy Dragon gains flying and loses trample until end of turn.
         4/4
 
         Destructor Dragon {4}{g}{g}
-        [frf mb1]
+        [frf]
         Creature - Dragon
         Flying
         When Destructor Dragon dies, destroy target noncreature permanent.
@@ -90,35 +89,16 @@ describe "CLI Frontend" do
     )
   end
 
-  it "verbose color indicator (gone now)" do
+  it "verbose color indicator" do
     assert_cli(
       search: "mana=4 c:u c:w",
       verbose: true,
       output: <<-EOF,
         Transguild Courier {4}
-        [dis]
+        [di]
         Artifact Creature - Golem
-        Transguild Courier is all colors.
+        (Color indicator: Transguild Courier is all colors)
         3/3
-        EOF
-      error: ""
-    )
-  end
-
-  it "verbose color indicator" do
-    assert_cli(
-      search: "ind=3 bolas",
-      verbose: true,
-      output: <<-EOF,
-        Nicol Bolas, the Arisen
-        [m19 pm19]
-        Legendary Planeswalker - Bolas
-        (Color indicator: Nicol Bolas, the Arisen is blue, black, and red)
-        [+2]: Draw two cards.
-        [−3]: Nicol Bolas, the Arisen deals 10 damage to target creature or planeswalker.
-        [−4]: Put target creature or planeswalker card from a graveyard onto the battlefield under your control.
-        [−12]: Exile all but the bottom card of target player's library.
-        Loyalty: 7
         EOF
       error: ""
     )
@@ -130,10 +110,10 @@ describe "CLI Frontend" do
       verbose: true,
       output: <<-EOF,
         Steam Vents
-        [gpt rtr exp prm grn pgrn]
+        [gp rtr exp]
         Land - Island Mountain
         ({T}: Add {U} or {R}.)
-        As Steam Vents enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.
+        As Steam Vents enters the battlefield, you may pay 2 life. If you don't, Steam Vents enters the battlefield tapped.
         EOF
       error: ""
     )
@@ -145,7 +125,7 @@ describe "CLI Frontend" do
       verbose: true,
       output: <<-EOF,
         Bloodbraid Elf {2}{r}{g}
-        [-arb +f10 +pc2 -ema -c16 +pca +prm +mb1]
+        [-arb +fnmp +pc2 -ema -c16 +pca]
         Creature - Elf Berserker
         Haste
         Cascade
@@ -178,9 +158,6 @@ describe "CLI Frontend" do
       verbose: false,
       output: <<-EOF,
         Ral Zarek
-        Ral, Caller of Storms
-        Ral, Izzet Viceroy
-        Ral, Storm Conduit
         EOF
       error: <<-EOF
         Doesn't look like correct date, ignored: "battle for homelands"

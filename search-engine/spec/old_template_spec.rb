@@ -5,13 +5,12 @@ describe "Old templates" do
   include_context "db"
 
   it do
-    assert_count_cards %Q[o:"mana pool"], 1
+    assert_count_cards %Q[o:"mana pool"], 2
   end
 
-  # Sarah's Wings (CMB1)
   it do
     # "Firesong and Sunspeaker" is an exception
-    assert_count_cards %Q[o:"creature or player"], 3
+    assert_count_cards %Q[o:"creature or player"], 2
   end
 
   it do
@@ -20,15 +19,20 @@ describe "Old templates" do
 
   ### On non-Gatherer cards only
   it do
-    assert_count_cards %Q[o:"his or her"], 0
+    # Gifts Given
+    assert_count_cards %Q[o:"his or her"], 1
     assert_count_cards %Q[o:"he or she"], 0
     assert_count_cards %Q[o:"him or her"], 0
   end
 
   # Robot Chicken
-  # Garruk the Slayer
   it do
-    assert_count_cards %Q[o:"token onto the battlefield"], 2
+    assert_count_cards %Q[o:"token onto the battlefield"], 1
+  end
+
+  ### Recently fixed
+  it do
+    assert_count_cards "t:planeswalker -t:legendary", 0
   end
 
   it do

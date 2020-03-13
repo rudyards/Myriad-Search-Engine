@@ -12,7 +12,6 @@ end
 
 class Query
   attr_reader :warnings, :seed
-  attr_reader :cond, :metadata # for tests only
 
   def initialize(query_string, seed=nil)
     @query_string = query_string
@@ -52,7 +51,6 @@ class Query
       @cond.to_s,
       # ("time:#{maybe_quote(@metadata[:time])}" if @metadata[:time]),
       ("sort:#{@metadata[:sort]}" if @metadata[:sort]),
-      ("view:#{@metadata[:view]}" if @metadata[:view]),
     ].compact.join(" ")
     (@metadata[:ungrouped] ? "++#{str}" : str)
   end

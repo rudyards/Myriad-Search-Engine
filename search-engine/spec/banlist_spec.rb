@@ -3,44 +3,6 @@ describe "Banlist" do
   # Based on:
   # http://mtgsalvation.gamepedia.com/Timeline_of_DCI_bans_and_restrictions#2015
 
-  it "banlist_2019" do
-    assert_banlist_changes "November 2019",
-      "standard banned", "Oko, Thief of Crowns",
-      "standard banned", "Once Upon a Time",
-      "standard banned", "Veil of Summer",
-      "legacy banned", "Wrenn and Six",
-      "vintage restricted", "Narset, Parter of Veils"
-
-    assert_banlist_changes "October 2019",
-      "standard banned", "Field of the Dead",
-      "pauper banned", "Arcum's Astrolabe"
-
-    assert_banlist_changes "August 2019",
-      "standard unbanned", "Rampaging Ferocidon",
-      "modern banned", "Hogaak, Arisen Necropolis",
-      "modern banned", "Faithless Looting",
-      "modern unbanned", "Stoneforge Mystic",
-      "vintage restricted", "Karn, the Great Creator",
-      "vintage restricted", "Mystic Forge",
-      "vintage restricted", "Mental Misstep",
-      "vintage restricted", "Golgari Grave-Troll",
-      "vintage unrestricted", "Fastbond"
-
-    assert_banlist_changes "July 2019",
-      "modern banned", "Bridge from Below",
-      "pauper banned", "Hymn to Tourach",
-      "pauper banned", "Sinkhole",
-      "pauper banned", "High Tide"
-
-    assert_banlist_changes "May 2019",
-      "pauper banned", "Gush",
-      "pauper banned", "Gitaxian Probe",
-      "pauper banned", "Daze"
-
-    assert_banlist_changes "January 2019",
-      "modern banned", "Krark-Clan Ironworks"
-  end
-
   it "banlist_2018" do
     # These were separate announcements
     assert_banlist_changes "July 2018",
@@ -801,7 +763,6 @@ describe "Banlist" do
   ##################################################
   # Formats in mtgjson are verified by indexer
   # Formats not in mtgjson should all be listed here
-  # FIXME: (that was with v3, no longer true)
 
   it "pauper_banlist_now" do
     assert_full_banlist "pauper", "1 October 2015", [
@@ -872,18 +833,6 @@ describe "Banlist" do
       "Painter's Servant",
       "Sensei's Divining Top",
       "Trade Secrets",
-      "Amulet of Quoz",
-      "Bronze Tablet",
-      "Chaos Orb",
-      "Contract from Below",
-      "Darkpact",
-      "Demonic Attorney",
-      "Falling Star",
-      "Jeweled Bird",
-      "Rebirth",
-      "Shahrazad",
-      "Tempest Efreet",
-      "Timmerian Fiends",
     ]
   end
 

@@ -15,7 +15,6 @@ class Format
   end
 
   def legality(card)
-    card = card.main_front if card.is_a?(PhysicalCard)
     if card.extra or !in_format?(card)
       nil
     else
@@ -23,26 +22,9 @@ class Format
     end
   end
 
-  def banned?(card)
-    legality(card) == "banned"
-  end
-
-  def restricted?(card)
-    legality(card) == "restricted"
-  end
-
-  def legal?(card)
-    legality(card) == "legal"
-  end
-
-  def legal_or_restricted?(card)
-    l = legality(card)
-    l == "legal" or l == "restricted"
-  end
-
   def in_format?(card)
     card.printings.each do |printing|
-      next if @time and printing.release_date > @time
+      # next if @time and printing.release_date > @time
       if @included_sets
         next unless @included_sets.include?(printing.set_code)
       else
@@ -51,40 +33,6 @@ class Format
       return true
     end
     false
-  end
-
-  def deck_issues(deck)
-    [
-      *deck_size_issues(deck),
-      *deck_card_issues(deck),
-    ]
-  end
-
-  def deck_size_issues(deck)
-    issues = []
-    if deck.number_of_mainboard_cards < 60
-      issues << "Deck must contain at least 60 mainboard cards, has only #{deck.number_of_mainboard_cards}"
-    end
-    if deck.number_of_sideboard_cards > 15
-      issues << "Deck must contain at most 15 sideboard cards, has #{deck.number_of_sideboard_cards}"
-    end
-    issues
-  end
-
-  def deck_card_issues(deck)
-    issues = []
-    deck.card_counts.each do |card, name, count|
-      card_legality = legality(card)
-      case card_legality
-      when "legal"
-        if count > 1 and not card.allowed_in_any_number?
-          issues << "Deck contains #{count} copies of #{name}, only up to 1 allowed"
-        end
-      else
-        issues << "#{name} is not in the format"
-      end
-    end
-    issues
   end
 
   def format_pretty_name
@@ -115,21 +63,23 @@ class Format
     def formats_index
       # Removed spaces so you can say "lw block" lw-block lwblock lw_block or whatever
       {
-        "modern"                     => FormatModern,
+        "myriad"                      => FormatMyriad,
       }
     end
 
     def all_format_classes
-      @all_format_classes ||= formats_index.values.uniq
+      formats_index.values.uniq
     end
 
     def [](format_name)
       format_name = format_name.downcase.gsub(/\s|-|_/, "")
-      return FormatAny if format_name == "*"
       formats_index[format_name] || FormatUnknown
     end
   end
 end
 
-
 Dir["#{__dir__}/format_*.rb"].each do |path| require_relative path end
+
+# formats = Dir["#{__dir__}/format_*.rb"]
+# puts("Loading formats: #{formats}")
+

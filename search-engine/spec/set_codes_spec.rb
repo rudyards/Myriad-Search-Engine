@@ -13,10 +13,9 @@ describe "Set Codes" do
     end
   end
 
-  it "alternative_code" do
+  it "official_code" do
     db.sets.values.each do |set|
-      next unless set.alternative_code
-      assert_resolves set.alternative_code, set
+      assert_resolves set.official_code, set
     end
   end
 

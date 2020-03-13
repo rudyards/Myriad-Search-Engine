@@ -1,91 +1,23 @@
 describe "Formats - Modern" do
   include_context "db"
 
-  let(:regular_sets) do
-    db.sets.values.select do |s|
-      s.types.include?("standard") or s.types.include?("modern")
-    end.to_set
-  end
+  let(:regular_sets) { db.sets.values.select{|s|
+    s.type == "core" or s.type == "expansion" or s.name =~ /Welcome Deck/
+  }.to_set }
 
   describe "Modern legal sets" do
-    let(:start_date) { db.sets["8ed"].release_date }
+    let(:start_date) { db.sets["8e"].release_date }
     let(:expected) { regular_sets.select{|set| set.release_date >= start_date}.map(&:code).to_set }
     let(:actual) { FormatModern.new.included_sets }
     it { expected.should eq actual }
   end
 
   it "modern" do
-    assert_block_composition "modern", "war", [
-      "8ed",
-      "mrd",
-      "dst",
-      "5dn",
-      "chk",
-      "bok",
-      "sok",
-      "9ed",
-      "rav",
-      "gpt",
-      "dis",
-      "csp",
-      "tsp",
-      "tsb",
-      "plc",
-      "fut",
-      "10e",
-      "lrw",
-      "mor",
-      "shm",
-      "eve",
-      "ala",
-      "con",
-      "arb",
-      "m10",
-      "zen",
-      "wwk",
-      "roe",
-      "m11",
-      "som",
-      "mbs",
-      "nph",
-      "m12",
-      "isd",
-      "dka",
-      "avr",
-      "m13",
-      "rtr",
-      "gtc",
-      "dgm",
-      "m14",
-      "ths",
-      "bng",
-      "jou",
-      "m15",
-      "ktk",
-      "frf",
-      "dtk",
-      "ori",
-      "bfz",
-      "ogw",
-      "soi",
-      "emn",
-      "kld",
-      "aer",
-      "akh",
-      "w17",
-      "hou",
-      "xln",
-      "rix",
-      "dom",
-      "m19",
-      "g18",
-      "grn",
-      "rna",
-      "war",
-    ],
+    assert_block_composition "modern", "rix", ["8e", "mi", "ds", "5dn", "chk", "bok", "sok", "9e", "rav", "gp", "di", "cs", "ts", "tsts", "pc", "fut", "10e", "lw", "mt", "shm", "eve", "ala", "cfx", "arb", "m10", "zen", "wwk", "roe", "m11", "som", "mbs", "nph", "m12", "isd", "dka", "avr", "m13", "rtr", "gtc", "dgm", "m14", "ths", "bng", "jou", "m15", "ktk", "frf", "dtk", "ori", "bfz", "ogw", "soi", "emn", "kld", "aer", "akh", "w17", "hou", "xln", "rix"],
       "Ancient Den" => "banned",
       "Birthing Pod" => "banned",
       "Blazing Shoal" => "banned",
+      "Bloodbraid Elf" => "banned",
       "Chrome Mox" => "banned",
       "Cloudpost" => "banned",
       "Dark Depths" => "banned",
@@ -99,7 +31,7 @@ describe "Formats - Modern" do
       "Great Furnace" => "banned",
       "Green Sun's Zenith" => "banned",
       "Hypergenesis" => "banned",
-      "Krark-Clan Ironworks" => "banned",
+      "Jace, the Mind Sculptor" => "banned",
       "Mental Misstep" => "banned",
       "Ponder" => "banned",
       "Preordain" => "banned",

@@ -1,5 +1,5 @@
 describe "Unsets" do
-  include_context "db", "ugl", "unh", "pcel", "hho", "ust"
+  include_context "db", "ug", "uh", "uqc", "hho", "ust"
 
   it "half power" do
     "pow=1"  .should exclude_cards "Little Girl"
@@ -88,8 +88,7 @@ describe "Unsets" do
       "Shichifukujin Dragon",
       "Splendid Genesis"
     )
-    # (Old Fogey) is mtgjson bug
-    "not:new -e:pcel -(Old Fogey)".should equal_search "(Blast from the Past) or e:ugl"
+    "not:new".should equal_search "-e:uh,hho,ust -(Robot Chicken)"
     "not:silver-bordered -t:contraption".should return_cards(
       "Forest",
       "Mountain",
@@ -98,14 +97,11 @@ describe "Unsets" do
       "Island",
       "1996 World Champion",
       "Fraternal Exaltation",
-      "Gifts Given",
-      "Phoenix Heart",
       "Proposal",
       "Robot Chicken",
       "Shichifukujin Dragon",
       "Splendid Genesis",
       "Steamflogger Boss",
-      "Stocking Tiger"
     )
     "is:black-bordered".should return_cards(
       "Forest",
@@ -115,31 +111,25 @@ describe "Unsets" do
       "Island",
       "1996 World Champion",
       "Fraternal Exaltation",
-      "Gifts Given",
-      "Phoenix Heart",
       "Proposal",
       "Robot Chicken",
       "Shichifukujin Dragon",
       "Splendid Genesis",
       "Steamflogger Boss",
-      "Stocking Tiger",
     )
     "is:white-bordered".should return_no_cards
   end
 
   it "edition shortcut syntax" do
-    assert_search_equal "e:unh,ugl", "e:unh or e:ugl"
-    assert_count_printings "e:unh,ugl", 261
+    assert_search_equal "e:uh,ug", "e:uh or e:ug"
+    assert_count_printings "e:uh,ug", 233
   end
 
   it "other:" do
     assert_search_results "other:c:g", "What", "Who", "When", "Where"
     # Any other has cmc != 4
-    assert_search_results "other:-cmc=4",
-      "Who", "What", "When", "Where", "Why", "Naughty", "Nice",
-      "B.F.M. (Big Furry Monster)", "B.F.M. (Big Furry Monster, Right Side)",
-      "Curse of the Fire Penguin", "Curse of the Fire Penguin Creature",
-      "Decorated Knight"
+    assert_search_results "other:-cmc=4", "Who", "What", "When", "Where", "Why", "Naughty", "Nice",
+      "B.F.M. (Big Furry Monster)", "B.F.M. (Big Furry Monster, Right Side)"
     # Doesn't have other side with cmc=4
     # This includes Where (cmc=4) and all single-sided cards
     assert_search_include "-other:cmc=4", "Where", "Chicken Egg"
@@ -183,16 +173,11 @@ describe "Unsets" do
   end
 
   it "//" do
-    assert_search_results "//",
-      "Who", "What", "When", "Where", "Why",
-      "B.F.M. (Big Furry Monster)", "B.F.M. (Big Furry Monster, Right Side)",
-      "Naughty", "Nice",
-      "Curse of the Fire Penguin Creature", "Curse of the Fire Penguin",
-      "Decorated Knight", "Present Arms"
+    assert_search_results "//", "Who", "What", "When", "Where", "Why", "B.F.M. (Big Furry Monster)", "B.F.M. (Big Furry Monster, Right Side)", "Naughty", "Nice"
     assert_search_results "When // Where // What", "Who", "What", "When", "Where", "Why"
     assert_search_results "When // Where // Whatever"
     assert_search_results "c:u // c:w // c:r", "Who", "What", "When", "Where", "Why"
-    assert_search_results "c:u // c:u", "Present Arms", "Decorated Knight"
+    assert_search_results "c:u // c:u"
 
     # This is limitation of the syntax, I might change my mind about it,
     # but it only affects this one uncard
@@ -201,12 +186,12 @@ describe "Unsets" do
 
   it "deep other: nesting doesn't crash the engine" do
     assert_search_results("other:"*20 + "cmc=1", "Who", "What", "When", "Where", "Why")
-    assert_search_results("other:"*20 + "cmc=7")
+    assert_search_results("other:"*20 + "cmc=6")
   end
 
   it "deep part: nesting doesn't crash the engine" do
     assert_search_results("part:"*20 + "cmc=1", "Who", "What", "When", "Where", "Why")
-    assert_search_results("part:"*20 + "cmc=7")
+    assert_search_results("part:"*20 + "cmc=6")
   end
 
   it "is:augment" do

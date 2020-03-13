@@ -1,3 +1,4 @@
+require "unicode_utils"
 class ConditionForeignRegexp < ConditionRegexp
   def initialize(lang, regexp)
     @lang = lang.downcase
@@ -19,12 +20,12 @@ class ConditionForeignRegexp < ConditionRegexp
   end
 
   def to_s
-    "#{@lang}:#{@regexp.inspect.sub(/[im]+\z/, "")}"
+    "#{@lang}:#{@regexp.inspect.sub(/i\z/, "")}"
   end
 
   private
 
   def hard_normalize(s)
-    s.unicode_normalize(:nfd).gsub(/\p{Mn}/, "").downcase
+    UnicodeUtils.downcase(UnicodeUtils.nfd(s).gsub(/\p{Mn}/, ""))
   end
 end

@@ -146,29 +146,16 @@ describe "Any queries" do
       assert_search_equal "any:augment", "is:augment or o:augment or ft:augment or (augment) or foreign:augment"
     end
 
-    it "nicknames" do
+    it "battleland" do
       assert_search_equal "any:battleland", "is:battleland"
+    end
+
+    it "bounceland" do
       assert_search_equal "any:bounceland", "is:bounceland"
-      assert_search_equal "any:canland", "is:canland"
-      assert_search_equal "any:canopyland", "is:canopyland"
+    end
+
+    it "checkland" do
       assert_search_equal "any:checkland", "is:checkland"
-      assert_search_equal "any:creatureland", "is:creatureland"
-      assert_search_equal "any:dual", "is:dual or (dual) or ft:dual"
-      assert_search_equal "any:fastland", "is:fastland"
-      assert_search_equal "any:fetchland", "is:fetchland"
-      assert_search_equal "any:filterland", "is:filterland"
-      assert_search_equal "any:gainland", "is:gainland"
-      assert_search_equal "any:guildgate", "is:guildgate or ft:guildgate"
-      assert_search_equal "any:karoo", "is:karoo or (Karoo Meerkat)"
-      assert_search_equal "any:keywordsoup", "is:keywordsoup"
-      assert_search_equal "any:manland", "is:manland"
-      assert_search_equal "any:painland", "is:painland"
-      assert_search_equal "any:scryland", "is:scryland"
-      assert_search_equal "any:shadowland", "is:shadowland"
-      assert_search_equal "any:shockland", "is:shockland"
-      assert_search_equal "any:storageland", "is:storageland"
-      assert_search_equal "any:tangoland", "is:tangoland"
-      assert_search_equal "any:triland", "is:triland"
     end
 
     it "commander" do
@@ -179,8 +166,32 @@ describe "Any queries" do
       assert_search_equal "any:digital", "is:digital or foreign:digital"
     end
 
+    it "dual" do
+      assert_search_equal "any:dual", "is:dual or (dual) or ft:dual"
+    end
+
+    it "fastland" do
+      assert_search_equal "any:fastland", "is:fastland"
+    end
+
+    it "fetchland" do
+      assert_search_equal "any:fetchland", "is:fetchland"
+    end
+
+    it "filterland" do
+      assert_search_equal "any:filterland", "is:filterland"
+    end
+
     it "funny" do
       assert_search_equal "any:funny", "is:funny or ft:funny"
+    end
+
+    it "gainland" do
+      assert_search_equal "any:gainland", "is:gainland"
+    end
+
+    it "manland" do
+      assert_search_equal "any:manland", "is:manland"
     end
 
     it "multipart" do
@@ -212,7 +223,7 @@ describe "Any queries" do
     end
 
     it "promo" do
-      assert_search_equal "any:promo", "is:promo or foreign:promo or (Battlefield Promotion) or o:promo"
+      assert_search_equal "any:promo", "is:promo or foreign:promo"
     end
 
     it "reprint" do
@@ -221,6 +232,14 @@ describe "Any queries" do
 
     it "reserved" do
       assert_search_equal "any:reserved", "is:reserved or ft:reserved"
+    end
+
+    it "scryland" do
+      assert_search_equal "any:scryland", "is:scryland"
+    end
+
+    it "shockland" do
+      assert_search_equal "any:shockland", "is:shockland"
     end
 
     it "spell" do
@@ -236,7 +255,7 @@ describe "Any queries" do
     end
 
     it "vanilla" do
-      assert_search_equal "any:vanilla", "is:vanilla or ft:vanilla"
+      assert_search_equal "any:vanilla", "is:vanilla"
     end
 
     it "draft" do

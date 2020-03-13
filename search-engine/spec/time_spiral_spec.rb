@@ -1,5 +1,5 @@
 describe "Time Spiral block" do
-  include_context "db", "tsp", "tsb", "plc", "fut"
+  include_context "db", "ts", "tsts", "pc", "fut"
 
   it "is:future" do
     assert_search_include "is:future", "Dryad Arbor"
@@ -34,6 +34,7 @@ describe "Time Spiral block" do
 
   it "Dryad Arbor" do
     assert_search_include "c:g", "Dryad Arbor"
+    assert_search_exclude "c:l", "Dryad Arbor"
     assert_search_exclude "c:c", "Dryad Arbor"
     assert_search_include "is:permanent", "Dryad Arbor"
     assert_search_exclude "is:spell", "Dryad Arbor"
@@ -74,12 +75,8 @@ describe "Time Spiral block" do
     assert_search_equal "not:old", "-is:old"
   end
 
-  it "is:colorshifted" do
-    assert_count_printings "is:colorshifted", 45
-  end
-
   it "is:timeshifted" do
-    assert_count_printings "is:timeshifted", 122
+    assert_count_printings "is:timeshifted", 45
   end
 
   it "manaless suspend cards" do

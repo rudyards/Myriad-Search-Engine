@@ -4,6 +4,6 @@ class ConditionNameRegexp < ConditionRegexp
   end
 
   def to_s
-    "n:#{@regexp.inspect.sub(/[im]+\z/, "")}"
+    "n:#{@regexp.inspect.sub(/i\z/, "")}"
   end
 end

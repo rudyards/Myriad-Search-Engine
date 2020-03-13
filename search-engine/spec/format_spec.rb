@@ -7,54 +7,28 @@ describe "Formats" do
     assert_search_equal "f:standard", "legal:standard"
     assert_search_results "f:extended" # Does not exist according to mtgjson
     assert_search_equal_cards "f:standard",
-      %Q[e:grn,rna,war,m20,eld,thb -(Field of the Dead) -(Veil of Summer) -(Oko Thief of Crowns) -(Once Upon Time)]
+      %Q[e:kld,aer,akh,w17,hou,xln,rix,dom,m19 -"Smuggler's Copter" -"Felidar Guardian" -"Aetherworks Marvel" -"Attune with Aether" -"Rogue Refiner" -"Rampaging Ferocidon" -"Ramunap Ruins"]
     assert_search_equal_cards 'f:"ravnica block"', "e:rav,gp,di"
     assert_search_equal 'f:"ravnica block"', 'legal:"ravnica block"'
     assert_search_equal_cards 'f:"ravnica block"', 'b:ravnica'
     assert_search_differ_cards 'f:"mirrodin block" t:land', 'b:"mirrodin" t:land'
-    assert_search_equal "f:duel", 'f:"duel commander"'
-    assert_search_equal "f:penny", 'f:"penny dreadful"'
   end
 
   it "ban_events" do
     FormatInnistradBlock.new.ban_events.should eq([
-      [Date.parse("2012-04-01"),
+       [Date.parse("2012-04-01"),
         "https://magic.wizards.com/en/articles/archive/feature/march-20-2012-dci-banned-restricted-list-announcement-2012-03-20",
-      [
-        {name: "Intangible Virtue", old: "legal", new: "banned"},
-        {name: "Lingering Souls", old: "legal", new: "banned"},
-      ]],
+       [
+         {name: "Intangible Virtue", old: "legal", new: "banned"},
+         {name: "Lingering Souls", old: "legal", new: "banned"},
+       ]],
     ])
     FormatModern.new.ban_events.should eq([
-      [Date.parse("2020-01-14"),
-        "https://magic.wizards.com/en/articles/archive/news/january-13-2020-banned-and-restricted-announcement",
-      [
-        {:name=>"Mox Opal", :new=>"banned", :old=>"legal"},
-        {:name=>"Oko, Thief of Crowns", :new=>"banned", :old=>"legal"},
-        {:name=>"Mycosynth Lattice", :new=>"banned", :old=>"legal"},
-      ]],
-      [Date.parse("2019-08-30"),
-        "https://magic.wizards.com/en/articles/archive/news/august-26-2019-banned-and-restricted-announcement-2019-08-26",
-      [
-        {:name=>"Stoneforge Mystic", :new=>"legal", :old=>"banned"},
-        {:name=>"Hogaak, Arisen Necropolis", :new=>"banned", :old=>"legal"},
-        {:name=>"Faithless Looting", :new=>"banned", :old=>"legal"},
-      ]],
-      [Date.parse("2019-07-12"),
-        "https://magic.wizards.com/en/articles/archive/news/july-8-2019-banned-and-restricted-announcement-2019-07-08",
-      [
-        {:name=>"Bridge from Below", :new=>"banned", :old=>"legal"},
-      ]],
-      [Date.parse("2019-01-21"),
-        "https://magic.wizards.com/en/articles/archive/news/january-21-2019-banned-and-restricted-announcement",
-      [
-        {:name=>"Krark-Clan Ironworks", :new=>"banned", :old=>"legal"},
-      ]],
       [Date.parse("2018-02-19"),
         "https://magic.wizards.com/en/articles/archive/news/february-12-2018-banned-and-restricted-announcement-2018-02-12",
       [
         {:name=>"Jace, the Mind Sculptor", :old=>"banned", :new=>"legal"},
-        {:name=>"Bloodbraid Elf", :old=>"banned", :new=>"legal"},
+        {:name=>"Bloodbraid Elf", :old=>"banned", :new=>"legal"}
       ]],
       [Date.parse("2017-01-20"),
         "https://magic.wizards.com/en/articles/archive/news/january-9-2017-banned-and-restricted-announcement-2017-01-09",
@@ -172,16 +146,8 @@ describe "Formats" do
   # We don't have all historical legality for Duel Commander yet,
   # maybe add it at some later point
   it "duel commander" do
-    assert_count_cards 'banned:"duel commander"', 63
-    assert_count_cards 'restricted:"duel commander"', 21
-  end
-
-  it "mtgo commander" do
-    assert_count_cards 'banned:vintage legal:"mtgo commander"', 0
-  end
-
-  it "historic" do
-    assert_count_cards "banned:historic", 4
+    assert_count_cards 'banned:"duel commander"', 61
+    assert_count_cards 'restricted:"duel commander"', 15
   end
 
   # We don't keep historical legality for Petty Dreadful yet
@@ -194,74 +160,6 @@ describe "Formats" do
     assert_search_results "is:meld not:primary f:pd other:-f:pd"
     # If AB not in PD, but A and B both PD, then fail
     assert_search_results "is:meld not:primary -f:pd -other:-f:pd"
-  end
-
-  describe "can check PhysicalCard or CardPrinting" do
-    let(:not_in_format) { db.search("Adorable Kitten").printings.first }
-    let(:banned) { db.search("Contract from Below").printings.first }
-    let(:restricted) { db.search("Black Lotus" ).printings.first}
-    let(:legal) { db.search("Giant Spider").printings.first }
-    let(:vintage) { FormatVintage.new }
-
-    it do
-      [not_in_format, banned, restricted, legal].each do |c|
-        vintage.legality(c).should eq vintage.legality(PhysicalCard.for(c))
-      end
-    end
-  end
-
-  ## Wildcards
-
-  it "banned:*" do
-    # This can be a long list
-    assert_search_equal "banned:*", %Q[
-      banned:standard or
-      banned:pioneer or
-      banned:modern or
-      banned:legacy or
-      banned:commander or
-      banned:pauper or
-      banned:duel or
-      banned:brawl or
-      banned:"Mirrodin Block" or
-      banned:"Urza Block" or
-      banned:"Ice Age Block" or
-      banned:"Masques Block" or
-      banned:"Mirage Block" or
-      banned:"Innistrad Block" or
-      banned:"Tempest Block" or
-      banned:"MTGO Commander"
-    ]
-  end
-
-  it "restricted:*" do
-    assert_search_equal "restricted:*", "restricted:vintage or restricted:duel or restricted:unsets"
-  end
-
-  it "legal:*" do
-    assert_search_equal "legal:*", %Q[
-      legal:vintage or
-      legal:unsets or
-      legal:historic or
-      legal:commander or
-      legal:"Urza Block" or
-      legal:penny or
-      legal:duel
-    ]
-  end
-
-  it "format:*" do
-    assert_search_equal "format:*", "legal:* or restricted:*"
-  end
-
-  it "restricted:* time:nph" do
-    assert_search_include "restricted:* time:rtr", "Thirst for Knowledge"
-    assert_search_exclude "restricted:* time:war", "Thirst for Knowledge"
-  end
-
-  it "banned:* time:nph" do
-    assert_search_exclude "banned:* time:rtr", "Splinter Twin"
-    assert_search_include "banned:* time:war", "Splinter Twin"
   end
 
   ## TODO - Extended, and various weirdo formats

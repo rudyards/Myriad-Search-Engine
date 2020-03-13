@@ -1,14 +1,12 @@
-class ConditionIsManland < ConditionNickname
-  def names
-    [
+class ConditionIsManland < Condition
+  def search(db)
+    names = [
       "blinkmoth nexus",
       "celestial colonnade",
       "creeping tar pit",
-      "domesticated watercourse",
       "dread statuary",
       "faerie conclave",
       "forbidding watchtower",
-      "frostwalk bastion",
       "ghitu encampment",
       "hissing quagmire",
       "hostile desert",
@@ -16,7 +14,6 @@ class ConditionIsManland < ConditionNickname
       "lavaclaw reaches",
       "lumbering falls",
       "mishra's factory",
-      "mobilized district",
       "mutavault",
       "nantuko monastery",
       "needle spires",
@@ -30,6 +27,11 @@ class ConditionIsManland < ConditionNickname
       "treetop village",
       "wandering fumarole",
     ]
+
+    names
+      .map{|n| db.cards[n]}
+      .flat_map{|card| card ? card.printings : []}
+      .to_set
   end
 
   def to_s
