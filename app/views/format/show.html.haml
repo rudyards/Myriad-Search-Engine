@@ -12,23 +12,34 @@
         - @included_sets.each do |set|
           %li
             = link_to set.name, controller: "set", action: "show", id: set.code
-
-    %h4 Banned cards
-    - if @banned.present?
-      %ul
-        - @banned.sort.each do |card|
-          %li
-            = link_to_card(card) do
-              = card.name
-    - else
-      %p There are no banned cards.
-
-    %h4 Restricted cards
-    - if @restricted.present?
-      %ul
-        - @restricted.sort.each do |card|
-          %li
-            = link_to_card(card) do
-              = card.name
-    - else
-      %p There are no restricted cards.
+    
+    Myriad also has a points list: 
+    %ul
+    %li Crucible of the Gods (4 points)
+    %li Danaal, the Last Tome Keeper (3 points)
+    %li Infernal Recall (3 points)
+    %li Mox Amethyst (3 points)
+    %li Mox Pyrope (3 points)
+    %li Timely Lesson (2 points)
+    %li Pactbound Mox (2 points)
+    %li Corpse Collector (2 points)
+    %li To Dream A Ship (2 points)
+    %li Dubious Tutor (2 points)
+    %li Vathi Siege Mage (2 points)
+    %li Collapsing Infrastructure (1 point)
+    %li Chromatic Cube (1 point)
+    %li Glimpse of Dawn (1 point)
+    %li Briar King's Wake (1 point)
+    %li Seeking the City (1 point)
+    %li Flee the City (1 point)
+    %li Wizard's Tactics (1 point)
+    %li Brimstone Gatekeeper (1 point)
+    %li Pilfered Mox (1 point)
+    %li Remake In My Image (1 point)
+    %li Where All Things Roam (1 point)
+    %li Boon Caller (1 point)
+    %li Worlds Colliding (1 point)
+    %li Aneirin, King of Autumn (1 point)
+    %li Dilettante's Drive (1 point)
+    %li Vyreith, City-Souled (1 point)
+    %li Assemble the Heroes (1 point)

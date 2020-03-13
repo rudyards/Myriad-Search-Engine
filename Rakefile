@@ -32,6 +32,7 @@ task "pics:myriad" do
     path = pics + Pathname("#{c.set_code}/#{tempNumber}.jpg")
     path.parent.mkpath
     next if path.exist?
+    tempNumber = tempNumber.rjust(3, '0')
     url = "https://myriadmtg.000webhostapp.com/images/#{c.set_code}/#{tempNumber}.jpg"
     puts "Downloading #{c.name} #{c.set_code} #{c.multiverseid}"
     puts "   from #{url.to_s}"
