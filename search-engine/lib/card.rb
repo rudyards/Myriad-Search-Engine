@@ -15,7 +15,7 @@ class Card
   attr_writer :printings # For db subset
 
   attr_reader :name, :names, :layout, :colors, :mana_cost, :reserved, :types
-  attr_reader :partial_color_identity, :cmc, :text, :text_normalized, :power, :toughness, :loyalty, :extra
+  attr_reader :partial_color_identity, :cmc, :text, :text_normalized, :power, :toughness, :loyalty, :extra, :stability
   attr_reader :hand, :life, :rulings, :foreign_names, :foreign_names_normalized, :stemmed_name
   attr_reader :mana_hash, :typeline, :funny, :color_indicator, :related
   attr_reader :reminder_text, :augment, :display_power, :display_toughness, :display_mana_cost
@@ -41,6 +41,7 @@ class Card
     @cmc = data["cmc"] || 0
     @power = data["power"] ? smart_convert_powtou(data["power"]) : nil
     @toughness = data["toughness"] ? smart_convert_powtou(data["toughness"]) : nil
+    @stability = data["stability"] ? smart_convert_powtou(data["stability"]) : nil
     @loyalty = data["loyalty"] ? smart_convert_powtou(data["loyalty"]) : nil
     @display_power = data["display_power"] ? data["display_power"] : @power
     @display_toughness = data["display_toughness"] ? data["display_toughness"] : @toughness
@@ -195,7 +196,7 @@ class Card
       # "*" < "*²" < "1+*" < "2+*"
       # but let's not get anywhere near that
       case val
-      when "*", "*²", "1+*", "2+*", "7-*", "X", "∞", "?", "*+1", "*+2"
+      when "*", "*²", "1+*", "2+*", "7-*", "X", "∞", "?", "1d4+1"
         val
       else
         raise "Unrecognized value #{val.inspect}"

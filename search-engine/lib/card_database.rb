@@ -284,8 +284,6 @@ class CardDatabase
       puts(" card_database: other_cards=#{other_cards}")
       card.printings.each do |printing|
         printing.others = other_cards.map do |other_card|
-          puts "Looking for other cards #{printing} || #{other_card.printings}"
-          puts "this is running"
           from_same_set = other_card.printings.select{|other_printing| other_printing.set_code == printing.set_code}
           unless from_same_set.size == 1
             raise "Can't link other side - #{card_name}"
