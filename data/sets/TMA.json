@@ -42,7 +42,8 @@
       "types": [
         "Artifact",
         "Creature"
-      ]
+      ],
+      "multiverseid": 5637
     },
     {
       "artist": "Jian Guo",
@@ -59,11 +60,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -78,7 +75,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5638
     },
     {
       "artist": "Ben Wootten",
@@ -95,11 +93,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -114,7 +108,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5639
     },
     {
       "artist": "Tianhua Xu",
@@ -127,11 +122,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -146,7 +137,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5640
     },
     {
       "artist": "Joakim Englander",
@@ -164,11 +156,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -183,7 +171,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5641
     },
     {
       "artist": "Chris Cold",
@@ -196,11 +185,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -222,7 +207,8 @@
       "type": "Legendary Land — Swamp Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5642
     },
     {
       "artist": "jui",
@@ -242,11 +228,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -261,7 +243,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5643
     },
     {
       "artist": "Kan Liu",
@@ -279,11 +262,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -304,7 +283,8 @@
       "type": "Creature — Human Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5644
     },
     {
       "artist": "Jordan Grimmer",
@@ -318,11 +298,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -337,7 +313,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5645
     },
     {
       "artist": "Jason Kim",
@@ -354,11 +331,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -380,7 +353,8 @@
       "type": "Legendary Planeswalker — Anne",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5646
     },
     {
       "artist": "Milan Nikolik",
@@ -394,11 +368,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -416,7 +386,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5647
     },
     {
       "artist": "Sam Burley",
@@ -429,11 +400,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -451,7 +418,8 @@
       "type": "Land — Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5648
     },
     {
       "artist": "Timothy Lantz",
@@ -468,11 +436,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -493,7 +457,8 @@
       "type": "Creature — Human Wizard",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5649
     },
     {
       "artist": "Andrew Hou",
@@ -510,11 +475,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -538,7 +499,8 @@
       "type": "Legendary Creature — Angel Rogue",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5650
     },
     {
       "artist": "Alon Chou",
@@ -556,11 +518,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -575,7 +533,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5651
     },
     {
       "artist": "celarx",
@@ -592,11 +551,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -618,7 +573,8 @@
       "type": "Creature — Human Artificer Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5652
     },
     {
       "artist": "T. J. Laci",
@@ -631,11 +587,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -653,7 +605,8 @@
       "type": "Land — Biome",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5653
     },
     {
       "artist": "Alex Konstad",
@@ -666,11 +619,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -688,7 +637,8 @@
       "type": "Land — Biome",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5654
     },
     {
       "artist": "Leon Tukker",
@@ -701,11 +651,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -723,7 +669,8 @@
       "type": "Land — Biome",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5655
     },
     {
       "artist": "Veli Nyström",
@@ -736,11 +683,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -758,7 +701,8 @@
       "type": "Land — Biome",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5656
     },
     {
       "artist": "Alyn Spiller",
@@ -771,11 +715,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -793,7 +733,8 @@
       "type": "Land — Biome",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5657
     },
     {
       "artist": "Jeff Simpson",
@@ -806,11 +747,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -830,7 +767,8 @@
       "type": "Creature — Avatar",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5658
     },
     {
       "artist": "Saryth Chareonpanichkul",
@@ -847,11 +785,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -871,7 +805,8 @@
       "type": "Creature — Zombie",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5659
     },
     {
       "artist": "Jason Engle",
@@ -889,11 +824,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -914,7 +845,8 @@
       "type": "Creature — Human Rogue",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5660
     },
     {
       "artist": "Jason Engle",
@@ -932,11 +864,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -957,7 +885,8 @@
       "type": "Creature — Orc Monk",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5661
     },
     {
       "artist": "Sara Butcher",
@@ -974,11 +903,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -998,7 +923,8 @@
       "type": "Creature — Angel",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5662
     },
     {
       "artist": "Ian Llanas",
@@ -1017,11 +943,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1036,7 +958,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5663
     },
     {
       "artist": "JasonTN",
@@ -1053,11 +976,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1072,7 +991,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5664
     },
     {
       "artist": "Emmanual Bou",
@@ -1085,11 +1005,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1107,7 +1023,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5665
     },
     {
       "artist": "Emmanuel Bou",
@@ -1120,11 +1037,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1142,7 +1055,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5666
     },
     {
       "artist": "Emmanuel Bou",
@@ -1155,11 +1069,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1177,7 +1087,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5667
     },
     {
       "artist": "Feuryl",
@@ -1190,11 +1101,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1212,7 +1119,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5668
     },
     {
       "artist": "Emmanuel Bou",
@@ -1225,11 +1133,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1247,7 +1151,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5669
     },
     {
       "artist": "Daniel Comerci",
@@ -1264,11 +1169,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1289,7 +1190,8 @@
       "type": "Creature — Demon Advisor",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5670
     },
     {
       "artist": "Mihai Radu",
@@ -1306,11 +1208,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1331,7 +1229,8 @@
       "type": "Creature — Human Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5671
     },
     {
       "artist": "Perun Tworek",
@@ -1349,11 +1248,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1374,7 +1269,8 @@
       "type": "Creature — Human Artificer",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5672
     },
     {
       "artist": "firestoreart",
@@ -1392,11 +1288,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1419,7 +1311,8 @@
       "type": "Legendary Creature — Leviathan",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5673
     },
     {
       "artist": "Emilie Lager",
@@ -1432,11 +1325,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1451,7 +1340,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5674
     },
     {
       "artist": "Svetlin Velinov",
@@ -1468,11 +1358,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1487,7 +1373,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5675
     },
     {
       "artist": "Alex Negrea",
@@ -1504,11 +1391,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1529,7 +1412,8 @@
       "type": "Creature — Human Advisor",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5676
     },
     {
       "artist": "Marko Djurdjevic",
@@ -1547,11 +1431,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1566,7 +1446,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5677
     },
     {
       "artist": "Christopher Wilhelm",
@@ -1580,11 +1461,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1602,7 +1479,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5678
     },
     {
       "artist": "Raymond Minnaar",
@@ -1615,11 +1493,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1634,7 +1508,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5679
     },
     {
       "artist": "Kekai Kotaki",
@@ -1651,11 +1526,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1670,7 +1541,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5680
     },
     {
       "artist": "M0nkeyBread",
@@ -1687,11 +1559,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1706,7 +1574,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5681
     },
     {
       "artist": "Lars Grant-West",
@@ -1719,11 +1588,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1738,7 +1603,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5682
     },
     {
       "artist": "jas-tham",
@@ -1751,11 +1617,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1777,7 +1639,8 @@
       "type": "Legendary Land — Island Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5683
     },
     {
       "artist": "Borisut Chamnan",
@@ -1790,11 +1653,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1809,7 +1668,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5684
     },
     {
       "artist": "Jeremy Fenske",
@@ -1827,11 +1687,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1846,7 +1702,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5685
     },
     {
       "artist": "Vlad Marica",
@@ -1859,11 +1716,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1878,7 +1731,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5686
     },
     {
       "artist": "Peter Bergting",
@@ -1896,11 +1750,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1924,7 +1774,8 @@
       "type": "Legendary Creature — Human Cleric",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5687
     },
     {
       "artist": "Chris Cold",
@@ -1941,11 +1792,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1960,7 +1807,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5688
     },
     {
       "artist": "Brett MacDonald",
@@ -1978,11 +1826,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -1990,7 +1834,7 @@
       "mciNumber": "9",
       "name": "Dauntless Pilgrim",
       "number": "9",
-      "originalText": "({HW} can be paid with either {W} or by exiling a white card from your graveyard.)\n",
+      "originalText": "({|W} can be paid with either {W} or by exiling a white card from your graveyard.)\n",
       "originalType": "Creature — Spirit Cleric",
       "power": "2",
       "rarity": "basic land",
@@ -2003,7 +1847,8 @@
       "type": "Creature — Spirit Cleric",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5689
     },
     {
       "artist": "Dieter Miller",
@@ -2022,11 +1867,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2041,7 +1882,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5690
     },
     {
       "artist": "CristianAC .",
@@ -2059,11 +1901,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2078,7 +1916,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5691
     },
     {
       "artist": "Jonas De Ro",
@@ -2091,11 +1930,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2110,7 +1945,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5692
     },
     {
       "artist": "Anthony S. Waters",
@@ -2127,11 +1963,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2139,14 +1971,15 @@
       "mciNumber": "71",
       "name": "Devouring Wastes",
       "number": "71",
-      "originalText": "({HB} can be payed with either {B} or by exiling a black card from your graveyard.)\nTarget creature gets -3/-3 until end of turn. If there are three or more black cards in your graveyard, destroy that creature.\n",
+      "originalText": "({|B} can be payed with either {B} or by exiling a black card from your graveyard.)\nTarget creature gets -3/-3 until end of turn. If there are three or more black cards in your graveyard, destroy that creature.\n",
       "originalType": "Instant",
       "rarity": "basic land",
       "text": "({HB} can be payed with either {B} or by exiling a black card from your graveyard.)\nTarget creature gets -3/-3 until end of turn. If there are three or more black cards in your graveyard, destroy that creature.\n",
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5693
     },
     {
       "artist": "Enayla",
@@ -2164,11 +1997,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2183,7 +2012,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5694
     },
     {
       "artist": "Conor Burke",
@@ -2201,11 +2031,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2220,7 +2046,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5695
     },
     {
       "artist": "Gabriel Wigren",
@@ -2233,11 +2060,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2259,7 +2082,8 @@
       "type": "Legendary Land — Forest Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5696
     },
     {
       "artist": "Sviatoslav Gerasimchuk",
@@ -2277,11 +2101,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2296,7 +2116,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5697
     },
     {
       "artist": "Ben Guldemond",
@@ -2313,11 +2134,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2338,7 +2155,8 @@
       "type": "Creature — Human Monk",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5698
     },
     {
       "artist": "Alector Fencer",
@@ -2356,11 +2174,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2375,7 +2189,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5699
     },
     {
       "artist": "Tobias Witek",
@@ -2388,11 +2203,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2411,7 +2222,8 @@
       "type": "Land — Island Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5700
     },
     {
       "artist": "Miguel Regodon",
@@ -2429,11 +2241,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2454,7 +2262,8 @@
       "type": "Creature — Human Nomad",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5701
     },
     {
       "artist": "Sheila Toigo",
@@ -2471,11 +2280,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2490,7 +2295,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5702
     },
     {
       "artist": "Timo Mimus",
@@ -2503,11 +2309,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2529,7 +2331,8 @@
       "type": "Legendary Land — Mountain Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5703
     },
     {
       "artist": "chibi_oneechan",
@@ -2549,11 +2352,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2577,7 +2376,8 @@
       "type": "Legendary Creature — Human Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5704
     },
     {
       "artist": "Dusan Markovic",
@@ -2594,11 +2394,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2619,7 +2415,8 @@
       "type": "Creature — Human Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5705
     },
     {
       "artist": "Sandara",
@@ -2637,11 +2434,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2662,7 +2455,8 @@
       "type": "Creature — Human Advisor",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5706
     },
     {
       "artist": "Tham Hoi Mun",
@@ -2679,11 +2473,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2698,7 +2488,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5707
     },
     {
       "artist": "Xabi Gaztelua",
@@ -2718,11 +2509,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2737,7 +2524,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5708
     },
     {
       "artist": "Bartek Gawel",
@@ -2755,11 +2543,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2774,7 +2558,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5709
     },
     {
       "artist": "Hugo Richard",
@@ -2791,11 +2576,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2810,7 +2591,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5710
     },
     {
       "artist": "Alexander Nanitchkov",
@@ -2827,11 +2609,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2852,7 +2630,8 @@
       "type": "Creature — Human Artificer",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5711
     },
     {
       "artist": "Jonas De Ro",
@@ -2865,11 +2644,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2888,7 +2663,8 @@
       "type": "Basic Land — Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5712
     },
     {
       "artist": "Dean Oyebo",
@@ -2905,11 +2681,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2917,14 +2689,15 @@
       "mciNumber": "44",
       "name": "Forgotten Decree",
       "number": "44",
-      "originalText": "({HU} can be paid with either {U} or by exiling a blue card from your graveyard.)\nCounter target spell.\n",
+      "originalText": "({|U} can be paid with either {U} or by exiling a blue card from your graveyard.)\nCounter target spell.\n",
       "originalType": "Instant",
       "rarity": "basic land",
       "text": "({HU} can be paid with either {U} or by exiling a blue card from your graveyard.)\nCounter target spell.\n",
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5713
     },
     {
       "artist": "Yanli Wang",
@@ -2937,11 +2710,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2959,7 +2728,8 @@
       "type": "Land — Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5714
     },
     {
       "artist": "Noah Bradley",
@@ -2972,11 +2742,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -2995,7 +2761,8 @@
       "type": "Land — Plains Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5715
     },
     {
       "artist": "Sascha",
@@ -3008,11 +2775,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3027,7 +2790,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5716
     },
     {
       "artist": "Allen Douglas",
@@ -3045,11 +2809,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3064,7 +2824,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5717
     },
     {
       "artist": "Robert Mallinson",
@@ -3081,11 +2842,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3109,7 +2866,8 @@
       "type": "Legendary Creature — Human Advisor",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5718
     },
     {
       "artist": "Carhvax Johannes",
@@ -3127,11 +2885,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3154,7 +2908,8 @@
       "type": "Legendary Creature — Human",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5719
     },
     {
       "artist": "Amir Zand",
@@ -3171,11 +2926,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3190,7 +2941,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5720
     },
     {
       "artist": "Stephen Gibson",
@@ -3207,11 +2959,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3231,7 +2979,8 @@
       "type": "Creature — Cat",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5721
     },
     {
       "artist": "Alex Vinogradov",
@@ -3250,11 +2999,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3275,7 +3020,8 @@
       "type": "Creature — Human Knight",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5722
     },
     {
       "artist": "Mateusz Ozminski",
@@ -3293,11 +3039,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3318,7 +3060,8 @@
       "type": "Creature — Goblin Cleric",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5723
     },
     {
       "artist": "David Demaret",
@@ -3331,11 +3074,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3350,7 +3089,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5724
     },
     {
       "artist": "Eren Arik",
@@ -3368,11 +3108,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3387,7 +3123,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5725
     },
     {
       "artist": "Raymond Swanland",
@@ -3404,11 +3141,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3429,7 +3162,8 @@
       "type": "Creature — Human Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5726
     },
     {
       "artist": "Alejandro Mirabal",
@@ -3446,11 +3180,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3471,7 +3201,8 @@
       "type": "Creature — Insect Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5727
     },
     {
       "artist": "Eleazar",
@@ -3489,11 +3220,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3515,7 +3242,8 @@
       "type": "Creature — Human Cleric Assassin",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5728
     },
     {
       "artist": "Kekai Kotaki",
@@ -3528,11 +3256,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3551,7 +3275,8 @@
       "type": "Land — Swamp Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5729
     },
     {
       "artist": "Joel Lagerwall",
@@ -3568,11 +3293,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3594,7 +3315,8 @@
       "type": "Legendary Planeswalker — Bol",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5730
     },
     {
       "artist": "BlueZima",
@@ -3612,11 +3334,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3631,7 +3349,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5731
     },
     {
       "artist": "Noah Bradley",
@@ -3648,11 +3367,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3667,7 +3382,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5732
     },
     {
       "artist": "Fran Fdez",
@@ -3684,11 +3400,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3711,7 +3423,8 @@
       "type": "Legendary Creature — Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5733
     },
     {
       "artist": "Robin Ruan",
@@ -3724,11 +3437,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3749,7 +3458,8 @@
       "type": "Creature — Angel Assassin",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5734
     },
     {
       "artist": "Jessada-Art",
@@ -3767,11 +3477,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3792,7 +3498,8 @@
       "type": "Creature — Insect Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5735
     },
     {
       "artist": "Rodrigue Pralier",
@@ -3805,11 +3512,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3829,7 +3532,8 @@
       "type": "Creature — Beast",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5736
     },
     {
       "artist": "James Wolf Strehle",
@@ -3847,11 +3551,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3866,7 +3566,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5737
     },
     {
       "artist": "Armiche Lora Sànchez",
@@ -3886,11 +3587,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3911,7 +3608,8 @@
       "type": "Creature — Mutant Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5738
     },
     {
       "artist": "Ben Mauro",
@@ -3928,11 +3626,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3947,7 +3641,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5739
     },
     {
       "artist": "1oshuart",
@@ -3965,11 +3660,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -3990,7 +3681,8 @@
       "type": "Creature — Human Monk",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5740
     },
     {
       "artist": "Chris Becker",
@@ -4003,11 +3695,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4025,7 +3713,8 @@
       "type": "Land — Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5741
     },
     {
       "artist": "Ramses Melendez",
@@ -4043,11 +3732,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4062,7 +3747,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5742
     },
     {
       "artist": "nvalt",
@@ -4080,11 +3766,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4092,7 +3774,7 @@
       "mciNumber": "134",
       "name": "Indomitable Lifeseeker",
       "number": "134",
-      "originalText": "{T}: Add {G}.\n{G}, {T}: Target creature spell can't be countered.\n",
+      "originalText": "{T}: Add {G}.\n{G}, {G}: Target creature spell can't be countered.\n",
       "originalType": "Creature — Elf Shaman",
       "power": "1",
       "rarity": "basic land",
@@ -4100,12 +3782,13 @@
         "Elf",
         "Shaman"
       ],
-      "text": "{T}: Add {G}.\n{G}, {T}: Target creature spell can't be countered.\n",
+      "text": "{T}: Add {G}.\n{G}, {G}: Target creature spell can't be countered.\n",
       "toughness": "1",
       "type": "Creature — Elf Shaman",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5743
     },
     {
       "artist": "bluefley",
@@ -4119,11 +3802,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4144,7 +3823,8 @@
       "types": [
         "Artifact",
         "Creauture"
-      ]
+      ],
+      "multiverseid": 5744
     },
     {
       "artist": "Akizhao",
@@ -4164,11 +3844,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4183,7 +3859,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5745
     },
     {
       "artist": "Alyn Spiller",
@@ -4196,11 +3873,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4215,7 +3888,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5746
     },
     {
       "artist": "Rio Sabda",
@@ -4232,11 +3906,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4244,7 +3914,7 @@
       "mciNumber": "84",
       "name": "Insatiable Lifedrinker",
       "number": "84",
-      "originalText": "({HB} can be paid with either {B} or by exiling a black card from your graveyard.)\nLifelink\nDiscard a card: Insatiable Lifedrinker gains indestructible until end of turn.\n",
+      "originalText": "({|B} can be paid with either {B} or by exiling a black card from your graveyard.)\nLifelink\nDiscard a card: Insatiable Lifedrinker gains indestructible until end of turn.\n",
       "originalType": "Creature — Vampire",
       "power": "3",
       "rarity": "basic land",
@@ -4256,7 +3926,8 @@
       "type": "Creature — Vampire",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5747
     },
     {
       "artist": "dledoblack",
@@ -4270,11 +3941,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4295,7 +3962,8 @@
       "types": [
         "Artifact",
         "Creature"
-      ]
+      ],
+      "multiverseid": 5748
     },
     {
       "artist": "Jesper Ejsing",
@@ -4313,11 +3981,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4332,7 +3996,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5749
     },
     {
       "artist": "jhtART",
@@ -4345,11 +4010,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4368,7 +4029,8 @@
       "type": "Basic Land — Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5750
     },
     {
       "artist": "zetrum",
@@ -4385,11 +4047,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4411,7 +4069,8 @@
       "type": "Legendary Planeswalker — Jacinthe",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5751
     },
     {
       "artist": "thatDMan",
@@ -4431,11 +4090,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4456,7 +4111,8 @@
       "type": "Creature — Elf Assassin",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5752
     },
     {
       "artist": "JasonTN",
@@ -4473,11 +4129,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4499,7 +4151,8 @@
       "type": "Legendary Planeswalker — Kel",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5753
     },
     {
       "artist": "Izzy Medrano",
@@ -4517,11 +4170,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4536,7 +4185,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5754
     },
     {
       "artist": "ZP ZHANG",
@@ -4553,11 +4203,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4579,7 +4225,8 @@
       "type": "Legendary Planeswalker — Mari",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5755
     },
     {
       "artist": "Daniel Kamarudin",
@@ -4597,11 +4244,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4621,7 +4264,8 @@
       "type": "Creature — Angel",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5756
     },
     {
       "artist": "Sandara",
@@ -4635,11 +4279,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4654,7 +4294,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5757
     },
     {
       "artist": "Sylar113",
@@ -4671,11 +4312,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4690,7 +4327,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5758
     },
     {
       "artist": "longiy",
@@ -4704,11 +4342,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4723,7 +4357,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5759
     },
     {
       "artist": "Nebojsa",
@@ -4736,11 +4371,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4755,7 +4386,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5760
     },
     {
       "artist": "Sandara",
@@ -4774,11 +4406,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4799,7 +4427,8 @@
       "type": "Creature — Plant Wolf",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5761
     },
     {
       "artist": "Kekai Kotaki",
@@ -4813,11 +4442,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4838,7 +4463,8 @@
       "type": "Legendary Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5762
     },
     {
       "artist": "Zhao Enzhe",
@@ -4856,11 +4482,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4875,7 +4497,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5763
     },
     {
       "artist": "Joe Slucher",
@@ -4889,11 +4512,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4908,7 +4527,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5764
     },
     {
       "artist": "Taylor Fischer",
@@ -4921,11 +4541,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4943,7 +4559,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5765
     },
     {
       "artist": ". Blake",
@@ -4961,11 +4578,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -4980,7 +4593,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5766
     },
     {
       "artist": "Johnny Morrow",
@@ -4997,11 +4611,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5016,7 +4626,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5767
     },
     {
       "artist": "Lynn Yewich",
@@ -5033,11 +4644,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5059,7 +4666,8 @@
       "type": "Legendary Planeswalker — Meredith",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5768
     },
     {
       "artist": "Svetlin Velinov",
@@ -5073,11 +4681,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5092,7 +4696,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5769
     },
     {
       "artist": "Alexander Mokhov",
@@ -5111,11 +4716,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5130,7 +4731,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5770
     },
     {
       "artist": "Reto Kaul",
@@ -5143,11 +4745,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5166,7 +4764,8 @@
       "type": "Land — Swamp Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5771
     },
     {
       "artist": "Sascha",
@@ -5179,11 +4778,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5202,7 +4797,8 @@
       "type": "Land — Plains Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5772
     },
     {
       "artist": "dkfktl1004",
@@ -5220,11 +4816,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5245,7 +4837,8 @@
       "type": "Creature — Human Cleric",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5773
     },
     {
       "artist": "Roman Defelix",
@@ -5258,11 +4851,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5281,7 +4870,8 @@
       "type": "Basic Land — Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5774
     },
     {
       "artist": "Kim Sokol",
@@ -5298,11 +4888,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5317,7 +4903,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5775
     },
     {
       "artist": "antifan",
@@ -5330,11 +4917,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5356,7 +4939,8 @@
       "type": "Legendary Land — Island Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5776
     },
     {
       "artist": "Michael Komark",
@@ -5374,11 +4958,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5399,7 +4979,8 @@
       "type": "Creature — Orc Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5777
     },
     {
       "artist": "Bardia Kiani",
@@ -5412,11 +4993,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5431,7 +5008,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5778
     },
     {
       "artist": "Mazert Young",
@@ -5444,11 +5022,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5463,7 +5037,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5779
     },
     {
       "artist": "sux2beme",
@@ -5480,11 +5055,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5499,7 +5070,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5780
     },
     {
       "artist": "Anthony Wolff",
@@ -5516,11 +5088,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5535,7 +5103,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5781
     },
     {
       "artist": "LASAHIDO",
@@ -5552,11 +5121,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5564,14 +5129,15 @@
       "mciNumber": "109",
       "name": "Ozone Arc",
       "number": "109",
-      "originalText": "({HR} can be paid with either {R} or by exiling a red card from your graveyard.)\nOzone Arc deals 2 damage to any target.\n",
+      "originalText": "({|R} can be paid with either {R} or by exiling a red card from your graveyard.)\nOzone Arc deals 2 damage to any target.\n",
       "originalType": "Instant",
       "rarity": "basic land",
       "text": "({HR} can be paid with either {R} or by exiling a red card from your graveyard.)\nOzone Arc deals 2 damage to any target.\n",
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5782
     },
     {
       "artist": "sakimi-chan",
@@ -5588,11 +5154,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5613,7 +5175,8 @@
       "type": "Creature — Human Knight",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5783
     },
     {
       "artist": "Michel Donze",
@@ -5630,11 +5193,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5649,7 +5208,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5784
     },
     {
       "artist": "Kate Pfeilschiefter",
@@ -5662,11 +5222,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5685,7 +5241,8 @@
       "type": "Land — Forest Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5785
     },
     {
       "artist": "Edli Akolli",
@@ -5702,11 +5259,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5721,7 +5274,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5786
     },
     {
       "artist": "Michail Rahmatoz",
@@ -5739,11 +5293,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5758,7 +5308,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5787
     },
     {
       "artist": "Daarken",
@@ -5776,11 +5327,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5795,7 +5342,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5788
     },
     {
       "artist": "Sandara",
@@ -5813,11 +5361,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5832,7 +5376,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5789
     },
     {
       "artist": "Applesin",
@@ -5845,11 +5390,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5868,7 +5409,8 @@
       "type": "Basic Land — Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5790
     },
     {
       "artist": "Max Hugo",
@@ -5881,11 +5423,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5900,7 +5438,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5791
     },
     {
       "artist": "ArtofTy",
@@ -5918,11 +5457,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5937,7 +5472,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5792
     },
     {
       "artist": "James Wolf Strehle",
@@ -5951,11 +5487,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -5970,7 +5502,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5793
     },
     {
       "artist": "OViWM",
@@ -5990,11 +5523,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6009,7 +5538,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5794
     },
     {
       "artist": "Kosa Zsolt",
@@ -6026,11 +5556,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6045,7 +5571,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5795
     },
     {
       "artist": "Kekai Kotaki",
@@ -6062,11 +5589,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6087,7 +5610,8 @@
       "type": "Creature — Ape Druid",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5796
     },
     {
       "artist": "Yanli Wang",
@@ -6104,11 +5628,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6123,7 +5643,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5797
     },
     {
       "artist": "Mihai Radu",
@@ -6141,11 +5662,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6153,14 +5670,15 @@
       "mciNumber": "23",
       "name": "Pulse of Antimagic",
       "number": "23",
-      "originalText": "({HW} can be paid with either {W} or by exiling a white card from your graveyard.)\nDestroy target artifact or enchantment.\n",
+      "originalText": "({|W} can be paid with either {W} or by exiling a white card from your graveyard.)\nDestroy target artifact or enchantment.\n",
       "originalType": "Instant",
       "rarity": "basic land",
       "text": "({HW} can be paid with either {W} or by exiling a white card from your graveyard.)\nDestroy target artifact or enchantment.\n",
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5798
     },
     {
       "artist": "Horia Dociu",
@@ -6174,11 +5692,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6199,7 +5713,8 @@
       "type": "Creature — Human Knight",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5799
     },
     {
       "artist": "ArchLimit",
@@ -6216,11 +5731,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6241,7 +5752,8 @@
       "type": "Creature — Human Artificer",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5800
     },
     {
       "artist": "Kirk Quilaquil",
@@ -6258,11 +5770,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6277,7 +5785,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5801
     },
     {
       "artist": "Ben Wootten",
@@ -6294,11 +5803,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6313,7 +5818,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5802
     },
     {
       "artist": "thedurrrrian",
@@ -6330,11 +5836,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6349,7 +5851,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5803
     },
     {
       "artist": "erlanataya",
@@ -6367,11 +5870,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6386,7 +5885,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5804
     },
     {
       "artist": "Dmitriy Prozorov",
@@ -6403,11 +5903,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6415,14 +5911,15 @@
       "mciNumber": "90",
       "name": "Restore to Unlife",
       "number": "90",
-      "originalText": "({HB} can be payed with either {B} or by exiling a black card from your graveyard.)\nWhen Restore to Unlife enters the battlefield, it becomes an Aura with enchant creature and “When Restore to Unlife leaves the battlefield, sacrifice enchanted creature.” Return target creature card from your graveyard to the battlefield and attach Restore to Unlife to it.\n",
+      "originalText": "({|B} can be payed with either {B} or by exiling a black card from your graveyard.)\nWhen Restore to Unlife enters the battlefield, it becomes an Aura with enchant creature and “When Restore to Unlife leaves the battlefield, sacrifice enchanted creature.” Return target creature card from your graveyard to the battlefield and attach Restore to Unlife to it.\n",
       "originalType": "Enchantment",
       "rarity": "basic land",
       "text": "({HB} can be payed with either {B} or by exiling a black card from your graveyard.)\nWhen Restore to Unlife enters the battlefield, it becomes an Aura with enchant creature and “When Restore to Unlife leaves the battlefield, sacrifice enchanted creature.” Return target creature card from your graveyard to the battlefield and attach Restore to Unlife to it.\n",
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5805
     },
     {
       "artist": "Levente Ruckert",
@@ -6439,11 +5936,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6458,7 +5951,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5806
     },
     {
       "artist": "JasonTN",
@@ -6475,11 +5969,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6499,7 +5989,8 @@
       "type": "Creature — Angel",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5807
     },
     {
       "artist": "Noah Bradley",
@@ -6512,11 +6003,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6535,7 +6022,8 @@
       "type": "Land — Mountain Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5808
     },
     {
       "artist": "Sergey Grechanyuk",
@@ -6552,11 +6040,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6571,7 +6055,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5809
     },
     {
       "artist": "Dave Greco",
@@ -6588,11 +6073,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6607,7 +6088,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5810
     },
     {
       "artist": "Michael Komarck",
@@ -6625,11 +6107,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6650,7 +6128,8 @@
       "type": "Creature — Elf Shaman",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5811
     },
     {
       "artist": "Jesse Cutler",
@@ -6668,11 +6147,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6692,7 +6167,8 @@
       "type": "Creature — Beast",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5812
     },
     {
       "artist": "Ben Wootten",
@@ -6706,11 +6182,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6731,7 +6203,8 @@
       "type": "Creature — Elk Spirit",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5813
     },
     {
       "artist": "Alex Tooth",
@@ -6744,11 +6217,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6767,7 +6236,8 @@
       "type": "Land — Forest Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5814
     },
     {
       "artist": "Christian Quinot",
@@ -6784,11 +6254,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6807,7 +6273,8 @@
       "type": "Enchantment — Aura Curse",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5815
     },
     {
       "artist": "Edli Akolli",
@@ -6825,11 +6292,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6850,7 +6313,8 @@
       "type": "Creature — Elf Druid",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5816
     },
     {
       "artist": "Marko Djurdjevic",
@@ -6867,11 +6331,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6893,7 +6353,8 @@
       "type": "Creature — Human Cleric Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5817
     },
     {
       "artist": "thedurrrrian",
@@ -6911,11 +6372,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6936,7 +6393,8 @@
       "type": "Creature — Zombie Wizard",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5818
     },
     {
       "artist": "Lina Karpova",
@@ -6949,11 +6407,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6968,7 +6422,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5819
     },
     {
       "artist": "Tyler James",
@@ -6985,11 +6440,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -6997,7 +6448,7 @@
       "mciNumber": "26",
       "name": "Skyreaper",
       "number": "26",
-      "originalText": "({HW} can be paid with either {W} or by exiling a white card from your graveyard.)\nFlying, vigilance, lifelink\nWhenever Skyreaper deals damage to an attacking creature, exile that creature.\n",
+      "originalText": "({|W} can be paid with either {W} or by exiling a white card from your graveyard.)\nFlying, vigilance, lifelink\nWhenever Skyreaper deals damage to an attacking creature, exile that creature.\n",
       "originalType": "Creature — Angel",
       "power": "3",
       "rarity": "basic land",
@@ -7009,7 +6460,8 @@
       "type": "Creature — Angel",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5820
     },
     {
       "artist": "Ramses Melendez",
@@ -7026,11 +6478,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7051,7 +6499,8 @@
       "type": "Creature — Spirit Wizard",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5821
     },
     {
       "artist": "Noah Bradley",
@@ -7064,11 +6513,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7087,7 +6532,8 @@
       "type": "Land — Island Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5822
     },
     {
       "artist": "Noah Bradley",
@@ -7101,11 +6547,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7120,7 +6562,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5823
     },
     {
       "artist": "MaBuArt",
@@ -7138,11 +6581,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7163,7 +6602,8 @@
       "type": "Creature — Spirit Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5824
     },
     {
       "artist": "Nakshatra Soni",
@@ -7180,11 +6620,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7204,7 +6640,8 @@
       "type": "Creature — Avatar",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5825
     },
     {
       "artist": "Artek92",
@@ -7221,11 +6658,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7245,7 +6678,8 @@
       "type": "Creature — Elemental",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5826
     },
     {
       "artist": "Beeple",
@@ -7263,11 +6697,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7282,7 +6712,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5827
     },
     {
       "artist": "Phuoc Quan",
@@ -7295,11 +6726,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7317,7 +6744,8 @@
       "type": "Land — Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5828
     },
     {
       "artist": "Smaragdia",
@@ -7334,11 +6762,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7353,7 +6777,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5829
     },
     {
       "artist": "Michael Rookard",
@@ -7366,11 +6791,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7385,7 +6806,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5830
     },
     {
       "artist": "Capprotis",
@@ -7403,11 +6825,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7428,7 +6846,8 @@
       "type": "Creature — Human Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5831
     },
     {
       "artist": "Yo Shimizu",
@@ -7446,11 +6865,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7470,7 +6885,8 @@
       "type": "Creature — Drake",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5832
     },
     {
       "artist": "Josu Hernaiz",
@@ -7487,11 +6903,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7509,7 +6921,8 @@
       "type": "Instant — Trap",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5833
     },
     {
       "artist": "Timza",
@@ -7527,11 +6940,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7552,7 +6961,8 @@
       "type": "Creature — Troll Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5834
     },
     {
       "artist": "Alex Negrea",
@@ -7569,11 +6979,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7594,7 +7000,8 @@
       "type": "Creature — Human Shaman",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5835
     },
     {
       "artist": "Veli Nystrom",
@@ -7611,11 +7018,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7630,7 +7033,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5836
     },
     {
       "artist": "kiki m r",
@@ -7649,11 +7053,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7674,7 +7074,8 @@
       "type": "Creature — Orc Knight",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5837
     },
     {
       "artist": "Mike McCarthy",
@@ -7691,11 +7092,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7716,7 +7113,8 @@
       "type": "Creature — Human Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5838
     },
     {
       "artist": "Westley Scott LaFleur",
@@ -7729,11 +7127,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7752,7 +7146,8 @@
       "type": "Land — Mountain Plains",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5839
     },
     {
       "artist": "Chaoyuan Xu",
@@ -7765,11 +7160,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7791,7 +7182,8 @@
       "type": "Legendary Land — Plains Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5840
     },
     {
       "artist": "Nicolas Valée",
@@ -7804,11 +7196,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7827,7 +7215,8 @@
       "type": "Basic Land — Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5841
     },
     {
       "artist": "Manuel Castañón",
@@ -7840,11 +7229,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7862,7 +7247,8 @@
       "type": "Artifact — Equipment",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5842
     },
     {
       "artist": "Ana Faragazzi",
@@ -7879,11 +7265,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7898,7 +7280,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5843
     },
     {
       "artist": "Noah Bradley",
@@ -7912,11 +7295,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7931,7 +7310,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5844
     },
     {
       "artist": "Chin Fong",
@@ -7949,11 +7329,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -7968,7 +7344,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5845
     },
     {
       "artist": "Kekai Kotaki",
@@ -7987,11 +7364,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8006,7 +7379,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5846
     },
     {
       "artist": "Alyn Spiller",
@@ -8019,11 +7393,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8045,7 +7415,8 @@
       "type": "Legendary Land — Forest Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5847
     },
     {
       "artist": "JasonTN",
@@ -8064,11 +7435,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8089,7 +7456,8 @@
       "type": "Creature — Human Rogue",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5848
     },
     {
       "artist": "Anthony Wolff",
@@ -8106,11 +7474,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8125,7 +7489,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5849
     },
     {
       "artist": "Bogdan MRK",
@@ -8142,11 +7507,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8154,14 +7515,15 @@
       "mciNumber": "120",
       "name": "Thunderblast",
       "number": "120",
-      "originalText": "({HR} can be paid with either {R} or by exiling a red card from your graveyard.)\nThunderblast deals 4 damage to any target.\n",
+      "originalText": "({|R} can be paid with either {R} or by exiling a red card from your graveyard.)\nThunderblast deals 4 damage to any target.\n",
       "originalType": "Instant",
       "rarity": "basic land",
       "text": "({HR} can be paid with either {R} or by exiling a red card from your graveyard.)\nThunderblast deals 4 damage to any target.\n",
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5850
     },
     {
       "artist": "Patrick Kassow Rossing",
@@ -8178,11 +7540,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8203,7 +7561,8 @@
       "type": "Creature — Orc Shaman",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5851
     },
     {
       "artist": "Juan Arrabal Hernàndez",
@@ -8220,11 +7579,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8244,7 +7599,8 @@
       "type": "Creature — Beast",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5852
     },
     {
       "artist": "Jordan Grimmer",
@@ -8257,11 +7613,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8276,7 +7628,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5853
     },
     {
       "artist": "Zhao Enzhe",
@@ -8289,11 +7642,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8308,7 +7657,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5854
     },
     {
       "artist": "Alex Tooth",
@@ -8321,11 +7671,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8340,7 +7686,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5855
     },
     {
       "artist": "u2644",
@@ -8353,11 +7700,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8372,7 +7715,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5856
     },
     {
       "artist": "James Wolf Strehle",
@@ -8385,11 +7729,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8404,7 +7744,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5857
     },
     {
       "artist": "Ferdinand Ladera",
@@ -8417,11 +7758,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8436,7 +7773,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5858
     },
     {
       "artist": "Chris Qulaquil",
@@ -8449,11 +7787,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8468,7 +7802,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5859
     },
     {
       "artist": "Sean Samuels",
@@ -8481,11 +7816,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8500,7 +7831,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5860
     },
     {
       "artist": "Nicholas Cloister",
@@ -8513,11 +7845,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8532,7 +7860,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5861
     },
     {
       "artist": "Kekai Kotaki",
@@ -8545,11 +7874,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8564,7 +7889,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5862
     },
     {
       "artist": "thegryph",
@@ -8582,11 +7908,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8607,7 +7929,8 @@
       "type": "Creature — Human Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5863
     },
     {
       "artist": "Saryth Chareonpanichkul",
@@ -8624,11 +7947,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8649,7 +7968,8 @@
       "type": "Creature — Human Warrior",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5864
     },
     {
       "artist": "naznemati",
@@ -8666,11 +7986,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8685,7 +8001,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5865
     },
     {
       "artist": "Jaime Jones",
@@ -8702,11 +8019,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8727,7 +8040,8 @@
       "type": "Creature — Elf Scout",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5866
     },
     {
       "artist": "Herve Groussin",
@@ -8745,11 +8059,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8764,7 +8074,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5867
     },
     {
       "artist": "Thomas Honz",
@@ -8781,11 +8092,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8800,7 +8107,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5868
     },
     {
       "artist": "Dmitry Prosvirnin",
@@ -8817,11 +8125,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8836,7 +8140,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5869
     },
     {
       "artist": "Julie Dillon",
@@ -8853,11 +8158,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8872,7 +8173,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5870
     },
     {
       "artist": "WandererLink",
@@ -8889,11 +8191,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8908,7 +8206,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5871
     },
     {
       "artist": "Asher Winter Kidd",
@@ -8925,11 +8224,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8944,7 +8239,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5872
     },
     {
       "artist": "Christopher Balaskas",
@@ -8961,11 +8257,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -8980,7 +8272,8 @@
       "type": "Enchantment",
       "types": [
         "Enchantment"
-      ]
+      ],
+      "multiverseid": 5873
     },
     {
       "artist": "Noah Bradley",
@@ -8997,11 +8290,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9016,7 +8305,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5874
     },
     {
       "artist": "Sam Burley",
@@ -9029,11 +8319,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9051,7 +8337,8 @@
       "type": "Land — Swamp",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5875
     },
     {
       "artist": "Noah Bradley",
@@ -9065,11 +8352,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9084,7 +8367,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5876
     },
     {
       "artist": "smiles4n",
@@ -9097,11 +8381,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9116,7 +8396,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5877
     },
     {
       "artist": "Viktor Titov",
@@ -9134,11 +8415,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9159,7 +8436,8 @@
       "type": "Creature — Elf Wizard",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5878
     },
     {
       "artist": "Raymond Swanland",
@@ -9176,11 +8454,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9195,7 +8469,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5879
     },
     {
       "artist": "Sergey Kolesov",
@@ -9212,11 +8487,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9238,7 +8509,8 @@
       "type": "Legendary Planeswalker — Vikalden",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5880
     },
     {
       "artist": "Anton Ek",
@@ -9255,11 +8527,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9279,7 +8547,8 @@
       "type": "Creature — Snake",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5881
     },
     {
       "artist": "J. Andrew",
@@ -9292,11 +8561,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9318,7 +8583,8 @@
       "type": "Legendary Land — Mountain Forest",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5882
     },
     {
       "artist": "Kekai Kotaki",
@@ -9331,11 +8597,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9355,7 +8617,8 @@
       "type": "Creature — Elemental",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5883
     },
     {
       "artist": "Kekai Kotaki",
@@ -9375,11 +8638,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9400,7 +8659,8 @@
       "type": "Creature — Human Knight",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5884
     },
     {
       "artist": "0BO",
@@ -9417,11 +8677,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9442,7 +8698,8 @@
       "type": "Creature — Spirit Shaman",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5885
     },
     {
       "artist": "Niku Senpai",
@@ -9455,11 +8712,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9474,7 +8727,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5886
     },
     {
       "artist": "Nele Diel",
@@ -9487,11 +8741,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9506,7 +8756,8 @@
       "type": "Land",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5887
     },
     {
       "artist": "Nate Barnes",
@@ -9519,11 +8770,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9538,7 +8785,8 @@
       "type": "Artifact",
       "types": [
         "Artifact"
-      ]
+      ],
+      "multiverseid": 5888
     },
     {
       "artist": "Anatoly Muschenko",
@@ -9558,11 +8806,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9577,7 +8821,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5889
     },
     {
       "artist": "Jeff Brown",
@@ -9594,11 +8839,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9618,7 +8859,8 @@
       "type": "Creature — Insect",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5890
     },
     {
       "artist": "AnotherWanderer",
@@ -9631,11 +8873,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9657,7 +8895,8 @@
       "type": "Legendary Planeswalker — Speaker",
       "types": [
         "Planeswalker"
-      ]
+      ],
+      "multiverseid": 5891
     },
     {
       "artist": "Sam Burley",
@@ -9674,11 +8913,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9693,7 +8928,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5892
     },
     {
       "artist": "Christian Lothrean",
@@ -9710,11 +8946,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9734,7 +8966,8 @@
       "type": "Creature — Dragon",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5893
     },
     {
       "artist": "Dmitri",
@@ -9751,11 +8984,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9776,7 +9005,8 @@
       "type": "Creature — Human Cleric",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5894
     },
     {
       "artist": "Tang Yuehui",
@@ -9794,11 +9024,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9813,7 +9039,8 @@
       "type": "Sorcery",
       "types": [
         "Sorcery"
-      ]
+      ],
+      "multiverseid": 5895
     },
     {
       "artist": "proxygreen",
@@ -9830,11 +9057,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9855,7 +9078,8 @@
       "type": "Creature — Human Soldier",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5896
     },
     {
       "artist": "Rudy Siswanto",
@@ -9868,11 +9092,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9894,7 +9114,8 @@
       "type": "Legendary Land — Plains Island",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5897
     },
     {
       "artist": "Alyn Spiller",
@@ -9907,11 +9128,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9933,7 +9150,8 @@
       "type": "Legendary Land — Swamp Mountain",
       "types": [
         "Land"
-      ]
+      ],
+      "multiverseid": 5898
     },
     {
       "artist": "Div4 Online",
@@ -9952,11 +9170,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -9971,7 +9185,8 @@
       "type": "Instant",
       "types": [
         "Instant"
-      ]
+      ],
+      "multiverseid": 5899
     },
     {
       "artist": "Jianson Chen",
@@ -9988,11 +9203,7 @@
       "layout": "normal",
       "legalities": [
         {
-          "format": "MSEM2",
-          "legality": "Legal"
-        },
-        {
-          "format": "MSEDH",
+          "format": "Myriad",
           "legality": "Legal"
         }
       ],
@@ -10015,7 +9226,8 @@
       "type": "Legendary Creature — Advisor",
       "types": [
         "Creature"
-      ]
+      ],
+      "multiverseid": 5900
     }
   ]
 }
