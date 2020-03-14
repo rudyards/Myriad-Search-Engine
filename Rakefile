@@ -23,6 +23,8 @@ desc "Fetch myriad pics"
 task "pics:myriad" do
   pics = Pathname("./public/cards")
   db.printings.each do |c|
+    puts c
+    puts c.multiverseid
     next unless c.multiverseid
     if c.layout == "split"
       tempNumber = c.number.gsub(/[ab]/, "")
@@ -33,6 +35,7 @@ task "pics:myriad" do
     path.parent.mkpath
     next if path.exist?
     tempNumber = tempNumber.rjust(3, '0')
+
     url = "https://myriadmtg.000webhostapp.com/images/#{c.set_code}/#{tempNumber}.jpg"
     puts "Downloading #{c.name} #{c.set_code} #{c.multiverseid}"
     puts "   from #{url.to_s}"

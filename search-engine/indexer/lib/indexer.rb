@@ -40,7 +40,7 @@ class Indexer
     index = prepare_index
     index["cards"] = json_normalize(index["cards"])
     index["sets"].each do |set_code, set|
-      index["sets"][set_code] = set
+    index["sets"][set_code] = set
     end
     @save_path.write(index.to_json)
   end
