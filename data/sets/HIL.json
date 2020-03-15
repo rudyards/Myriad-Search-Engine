@@ -3944,7 +3944,7 @@
       "mciNumber": "18",
       "name": "Guardian of the Annex",
       "number": "18",
-      "originalText": "First strike\nSpells cost an additional {H} to cast. ({H} can be paid with either {1} or 2 life.)\n",
+      "originalText": "First strike\nSpells cost an additional {P} to cast. ({P} can be paid with either {1} or 2 life.)\n",
       "originalType": "Creature — Horror",
       "power": "2",
       "rarity": "rare",
