@@ -71,6 +71,8 @@ class ConditionAny < ConditionOr
       @conds << ConditionIsBack.new
     when "booster"
       @conds << ConditionIsBooster.new
+    when "pointed"
+      @conds << ConditionIsPointed.new
     when "promo"
       @conds << ConditionIsPromo.new
     when "reprint"

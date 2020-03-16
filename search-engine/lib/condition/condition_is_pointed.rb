@@ -27,7 +27,7 @@ class ConditionIsPointed < Condition
       "Corpse Collector",
       "Dilettante's Drive",
       "Vyreith, City-Souled",
-      "Assemble the Heroes"
+      "Assemble the Heroes",
     ]
 
     names
