@@ -134,12 +134,12 @@ module ApplicationHelper
 
   def self.card_picture_path(card)
     if card.layout != "split"
-      url_hq = "/cards/#{card.set_code}/#{card.number}.jpg"
-      url_lq = "/cards/#{card.set_code}/#{card.number}.jpg"
+      url_hq = "/cards/#{card.set_code}/#{card.number}.png"
+      url_lq = "/cards/#{card.set_code}/#{card.number}.png"
     else
       tempNumber = card.number.gsub(/[ab]/, "")
-      url_hq = "/cards/#{card.set_code}/#{tempNumber}.jpg"
-      url_lq = "/cards/#{card.set_code}/#{tempNumber}.jpg"
+      url_hq = "/cards/#{card.set_code}/#{tempNumber}.png"
+      url_lq = "/cards/#{card.set_code}/#{tempNumber}.png"
     end
     path_hq = Pathname(__dir__) + "../../public#{url_hq}"
     path_lq = Pathname(__dir__) + "../../public#{url_lq}"
@@ -149,14 +149,14 @@ module ApplicationHelper
   end
 
   def self.card_picture_path_hq(card)
-    url_hq = "/cards_hq/#{card.set_code}/#{card.number}.jpg"
+    url_hq = "/cards_hq/#{card.set_code}/#{card.number}.png"
     path_hq = Pathname(__dir__) + "../../public#{url_hq}"
     return url_hq if path_hq.exist?
     nil
   end
 
   def self.card_picture_path_lq(card)
-    url_lq = "/cards/#{card.set_code}/#{card.number}.jpg"
+    url_lq = "/cards/#{card.set_code}/#{card.number}.png"
     path_lq = Pathname(__dir__) + "../../public#{url_lq}"
     return url_lq if path_lq.exist?
     nil
