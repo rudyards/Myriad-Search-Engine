@@ -9,8 +9,8 @@ class FormatMyriad < Format
   def build_included_sets
     Set[
       "RWR", "101", "DOA",
-      "TMA", "HIL", "ILD"
-      
+      "TMA", "HIL", "ILD",
+      "LVS", "BTJ"
     ]
   end
 end
