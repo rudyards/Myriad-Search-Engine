@@ -19,32 +19,31 @@ task "index" do
 end
 
 
-desc "Fetch myriad pics"
-task "pics:myriad" do
-  pics = Pathname("./public/cards")
-  db.printings.each do |c|
-    puts c
-    next unless c
-    if c.layout == "split"
-      tempNumber = c.number.gsub(/[ab]/, "")
-    else
-      tempNumber = c.number
-    end
-    path = pics + Pathname("#{c.set_code}/#{tempNumber}.png")
-    puts path
-    path.parent.mkpath
-    next if path.exist?
-    tempNumber = tempNumber.rjust(3, '0')
+# desc "Fetch myriad pics"
+# task "pics:myriad" do
+#   pics = Pathname("./public/cards")
+#   db.printings.each do |c|
+#     puts c
+#     next unless c
+#     if c.layout == "split"
+#       tempNumber = c.number.gsub(/[ab]/, "")
+#     else
+#       tempNumber = c.number
+#     end
+#     path = pics + Pathname("#{c.set_code}/#{tempNumber}.png")
+#     puts path
+#     path.parent.mkpath
+#     next if path.exist?
+#     tempNumber = tempNumber.rjust(3, '0')
 
-    url = "https://myriadmtg.000webhostapp.com/images/#{c.set_code}/#{tempNumber}.png"
-    puts "Downloading #{c.name} #{c.set_code} #{c.multiverseid}"
-    puts "   from #{url.to_s}"
-    puts "   to #{path.to_s}"
-    command = "wget -nv -nc #{url} -O #{path}"
-    #puts "   command: #{command}"
-    system "wget", "-nv", "-nc", url, "-O", path.to_s
-  end
-end
+#     url = "https://myriadmtg.000webhostapp.com/images/#{c.set_code}/#{tempNumber}.png"
+#     puts "Downloading #{c.name} #{c.set_code} #{c.multiverseid}"
+#     puts "   from #{url.to_s}"
+#     puts "   to #{path.to_s}"
+#     command = "wget -nv -nc #{url} -O #{path}"
+#     system "wget", "-nv", "-nc", url, "-O", path.to_s
+#   end
+# end
 
 desc "Fetch new Comprehensive Rules"
 task "rules:update" do

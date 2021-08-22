@@ -133,9 +133,11 @@ module ApplicationHelper
   end
 
   def self.card_picture_path(card)
+    puts card
+    puts card.layout
     if card.layout != "split"
-      url_hq = "/cards/#{card.set_code}/#{card.number}.png"
-      url_lq = "/cards/#{card.set_code}/#{card.number}.png"
+      url_hq = "/cards/#{card.set_code}/#{card.number}.jpg"
+      url_lq = "/cards/#{card.set_code}/#{card.number}.jpg"
     else
       tempNumber = card.number.gsub(/[ab]/, "")
       url_hq = "/cards/#{card.set_code}/#{tempNumber}.png"

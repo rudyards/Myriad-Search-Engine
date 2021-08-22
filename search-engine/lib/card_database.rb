@@ -252,7 +252,6 @@ class CardDatabase
     setup_artists!
     setup_sort_index!
     DeckDatabase.new(self).load!
-    index_cards_in_precons!
   end
 
   def index_cards_in_precons!
