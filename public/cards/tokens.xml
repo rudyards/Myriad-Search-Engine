@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="3">
+<cards>
+<!-->Tokens</-->
+<card>
+ <name>Against the Waves Reminder 101</name>
+ <set picURL="/Against the Waves Reminder 101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Target player mill X cards, where X is 2 plus the number of cards named Against the Waves in your graveyard. Draw a card, then make and shuffle three Against the Waves into your main library. </text>
+ <token>1</token>
+ <set num="1014" rarity="token">tokens</set>
+</card>
+<card>
+ <name>green Beast 33101</name>
+ <set picURL="/green Beast 33101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Beast</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="1017" rarity="token">tokens</set>
+ <reverse-related count="2">Hunter's Hideout</reverse-related>
+</card>
+<card>
+ <name>Meadow Songstress Reminder 101</name>
+ <set picURL="/Meadow Songstress Reminder 101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>G</color>
+ <manacost>1GG</manacost>
+ <cmc>3</cmc>
+ <pt>2/2</pt>
+ <type>Creature — Elemental Bard</type>
+ <tablerow>2</tablerow>
+ <text>When Meadow Songstress enters the battlefield, make and shuffle three Meadow Songstress into your main library. Whenever a nontoken creature enters the battlefield under your control, if it shares a name with one or more other creatures you control, draw a card. </text>
+ <token>1</token>
+ <set num="1018" rarity="token">tokens</set>
+</card>
+<card>
+ <name>white Soldier 11101</name>
+ <set picURL="/white Soldier 11101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="1011" rarity="token">tokens</set>
+ <reverse-related>Overwhelming Armies</reverse-related>
+ <reverse-related count="x">Overwhelming Armies</reverse-related>
+</card>
+<card>
+ <name>white Spirit 11101</name>
+ <set picURL="/white Spirit 11101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="1012" rarity="token">tokens</set>
+ <reverse-related>Magdel, Caller of Souls</reverse-related>
+ <reverse-related count="x">Magdel, Caller of Souls</reverse-related>
+ <reverse-related count="2">Wandering Souls</reverse-related>
+ <reverse-related count="3">Wandering Souls</reverse-related>
+</card>
+<card>
+ <name>Unceasing Flames Reminder 101</name>
+ <set picURL="/Unceasing Flames Reminder 101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>R</color>
+ <manacost>R</manacost>
+ <cmc>1</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Unceasing Flames deals X damage to any target, where X is 2 plus the number of cards named Unceasing Flames in your graveyard. Make and shuffle three Unceasing Flames into your main library. </text>
+ <token>1</token>
+ <set num="1016" rarity="token">tokens</set>
+ <reverse-related count="3">Unceasing Flames</reverse-related>
+ <reverse-related count="3">Unceasing Flames Reminder 101</reverse-related>
+</card>
+<card>
+ <name>Wandering Souls Reminder 101</name>
+ <set picURL="/Wandering Souls Reminder 101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>W</color>
+ <manacost>1WW</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Create X 1/1 white Spirit creature tokens with flying, where X is two plus the number of cards named Wandering Souls in your graveyard. Make and shuffle three Wandering Souls into your main library. </text>
+ <token>1</token>
+ <set num="1013" rarity="token">tokens</set>
+ <reverse-related count="3">Wandering Souls</reverse-related>
+ <reverse-related count="3">Wandering Souls Reminder 101</reverse-related>
+</card>
+<card>
+ <name>Warden of the Dead Emblem 101</name>
+ <set picURL="/Warden of the Dead Emblem 101.jpg" picURLSt="" picURLHq="">101</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Reminder</type>
+ <tablerow>1</tablerow>
+ <text>You may cast spells named Warden of the Dead without paying their mana costs. </text>
+ <token>1</token>
+ <set num="1019" rarity="token">tokens</set>
+ <reverse-related>Warden of the Dead</reverse-related>
+</card>
+<card>
+ <name>Warden of the Dead Reminder 101</name>
+ <set picURL="/Warden of the Dead Reminder 101.jpg" picURLSt="" picURLHq="">101</set>
+ <color>B</color>
+ <manacost>2BB</manacost>
+ <cmc>4</cmc>
+ <pt>4/4</pt>
+ <type>Creature — Demon</type>
+ <tablerow>2</tablerow>
+ <text>When Warden of the Dead enters the battlefield, you draw a card and lose 1 life. When Warden of the Dead dies, make and shuffle three Warden of the Dead into your main library. For the rest of the game, you may cast cards named Warden of the Dead without paying their mana cost. </text>
+ <token>1</token>
+ <set num="1015" rarity="token">tokens</set>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>Clue BTJ</name>
+ <set picURL="/Clue BTJ.jpg" picURLSt="" picURLHq="">BTJ</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Clue</type>
+ <tablerow>1</tablerow>
+ <text>{2}, Sacrifice this artifact: Draw a card. </text>
+ <token>1</token>
+ <set num="BTJ4" rarity="token">tokens</set>
+</card>
+<card>
+ <name>blue Homunculus 22BTJ</name>
+ <set picURL="/blue Homunculus 22BTJ.jpg" picURLSt="" picURLHq="">BTJ</set>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Homunculus</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="BTJ1" rarity="token">tokens</set>
+ <reverse-related>Cackling Assistants</reverse-related>
+</card>
+<card>
+ <name>Languid Whispers Token BTJ</name>
+ <set picURL="/Languid Whispers Token BTJ.jpg" picURLSt="" picURLHq="">BTJ</set>
+ <color>U</color>
+ <manacost>6U</manacost>
+ <cmc>7</cmc>
+ <pt>2/3</pt>
+ <type>Token Creature — Zombie</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="BTJ2" rarity="token">tokens</set>
+</card>
+<card>
+ <name>red Warrior 11BTJ</name>
+ <set picURL="/red Warrior 11BTJ.jpg" picURLSt="" picURLHq="">BTJ</set>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Warrior</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="BTJ3" rarity="token">tokens</set>
+ <reverse-related>Siobhan, the Golden Knuckle</reverse-related>
+ <reverse-related count="2">Valiant Challengers</reverse-related>
+ <reverse-related>Warrior's End</reverse-related>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>Mirror of Possibilities DOA</name>
+ <set picURL="/Mirror of Possibilities DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Masterpiece</type>
+ <tablerow>1</tablerow>
+ <text>Whenever you cast an instant or sorcery spell, you may pay {3}. If you do, copy it. You may choose new targets for the copy. Whenever a nontoken creature enters the battlefield under your control, you may pay {3}. If you do, create a token that's a copy of it. </text>
+ <token>1</token>
+ <set num="DOA5" rarity="token">tokens</set>
+ <reverse-related>Avid Researcher</reverse-related>
+ <reverse-related>Bottled Lightning</reverse-related>
+ <reverse-related>Exuberant Inventor</reverse-related>
+ <reverse-related>Iterative Designer</reverse-related>
+ <reverse-related>Vitin Blastgear</reverse-related>
+ <reverse-related>Vitin Forgemaster</reverse-related>
+ <reverse-related>Volta, Construct Consultant</reverse-related>
+</card>
+<card>
+ <name>Alia Emblem DOA</name>
+ <set picURL="/Alia Emblem DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Alia</type>
+ <tablerow>1</tablerow>
+ <text>{W}, Pay X life: Exile target creature with power X or less. </text>
+ <token>1</token>
+ <set num="DOA8" rarity="token">tokens</set>
+ <reverse-related>Alia, Bearer of Morning</reverse-related>
+</card>
+<card>
+ <name>colorless Construct 11DOA</name>
+ <set picURL="/colorless Construct 11DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Construct</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="DOA1" rarity="token">tokens</set>
+ <reverse-related>Align the Astrolabe</reverse-related>
+ <reverse-related count="x">Align the Astrolabe</reverse-related>
+ <reverse-related>Arcane Metalcrafter</reverse-related>
+ <reverse-related>Artificer's Prowess</reverse-related>
+ <reverse-related count="2">Artistic Vision</reverse-related>
+ <reverse-related>Benevolent Malach</reverse-related>
+ <reverse-related count="2">Blessing of Morning</reverse-related>
+ <reverse-related>Channeler of the Veil</reverse-related>
+ <reverse-related count="2">Citywide Automation</reverse-related>
+ <reverse-related>Endless Assembly</reverse-related>
+ <reverse-related>Iterative Designer</reverse-related>
+ <reverse-related count="2">Matron of Machines</reverse-related>
+ <reverse-related>Oldgrove Nurturer</reverse-related>
+ <reverse-related>Self Replication</reverse-related>
+ <reverse-related count="2">Self Replication</reverse-related>
+ <reverse-related count="2">Unity Spheres</reverse-related>
+</card>
+<card>
+ <name>Cultivating Spheres DOA</name>
+ <set picURL="/Cultivating Spheres DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Masterpiece</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of your draw step, draw an additional card. You may play an additional land on each of your turns. </text>
+ <token>1</token>
+ <set num="DOA2" rarity="token">tokens</set>
+ <reverse-related>Avid Researcher</reverse-related>
+ <reverse-related>Bottled Lightning</reverse-related>
+ <reverse-related>Exuberant Inventor</reverse-related>
+ <reverse-related>Iterative Designer</reverse-related>
+ <reverse-related>Vitin Blastgear</reverse-related>
+ <reverse-related>Vitin Forgemaster</reverse-related>
+ <reverse-related>Volta, Construct Consultant</reverse-related>
+</card>
+<card>
+ <name>colorless Golem 66DOA</name>
+ <set picURL="/colorless Golem 66DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>6/6</pt>
+ <type>Token Artifact Creature — Golem</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="DOA3" rarity="token">tokens</set>
+ <reverse-related>Artificer's Prowess</reverse-related>
+ <reverse-related>Claim for Civilization</reverse-related>
+ <reverse-related>Endless Assembly</reverse-related>
+</card>
+<card>
+ <name>colorless Juggernaut DOA</name>
+ <set picURL="/colorless Juggernaut DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/★</pt>
+ <type>Token Artifact Creature — Juggernaut</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="DOA4" rarity="token">tokens</set>
+ <reverse-related>Forgemaster's Charm</reverse-related>
+ <reverse-related>Polgek Artisan</reverse-related>
+</card>
+<card>
+ <name>colorless Powercell DOA</name>
+ <set picURL="/colorless Powercell DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Powercell</type>
+ <tablerow>1</tablerow>
+ <text>{T}: Add {C}. </text>
+ <token>1</token>
+ <set num="DOA6" rarity="token">tokens</set>
+ <cipt>1</cipt>
+ <reverse-related count="3">Eleventh Hour Breakthrough</reverse-related>
+ <reverse-related>Flamboyant Inventor</reverse-related>
+ <reverse-related>Junktrawler</reverse-related>
+ <reverse-related>Powercell Cultivator</reverse-related>
+ <reverse-related>Powercell Engineer</reverse-related>
+ <reverse-related>The Clocktower Project</reverse-related>
+</card>
+<card>
+ <name>Siraj Emblem DOA</name>
+ <set picURL="/Siraj Emblem DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Siraj</type>
+ <tablerow>1</tablerow>
+ <text>Whenever you target one or more permanents, gain control of those permanents. </text>
+ <token>1</token>
+ <set num="DOA9" rarity="token">tokens</set>
+ <reverse-related>Siraj, Interplanar Thief</reverse-related>
+</card>
+<card>
+ <name>Thrice-Folded Lotus DOA</name>
+ <set picURL="/Thrice-Folded Lotus DOA.jpg" picURLSt="" picURLHq="">DOA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Masterpiece</type>
+ <tablerow>1</tablerow>
+ <text>{T}: Add three mana of any one color. {3}, {T}: Thrice-Folded Lotus deals 3 damage to any target. </text>
+ <token>1</token>
+ <set num="DOA7" rarity="token">tokens</set>
+ <reverse-related>Avid Researcher</reverse-related>
+ <reverse-related>Bottled Lightning</reverse-related>
+ <reverse-related>Exuberant Inventor</reverse-related>
+ <reverse-related>Iterative Designer</reverse-related>
+ <reverse-related>Petal-Weaver Alexa</reverse-related>
+ <reverse-related>Vitin Blastgear</reverse-related>
+ <reverse-related>Vitin Forgemaster</reverse-related>
+ <reverse-related>Volta, Construct Consultant</reverse-related>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>ILD Faerie ILD</name>
+ <set picURL="/ILD Faerie ILD.jpg" picURLSt="" picURLHq="">ILD</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Faerie</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="ILD2" rarity="token">tokens</set>
+</card>
+<card>
+ <name>ILD Knight ILD</name>
+ <set picURL="/ILD Knight ILD.jpg" picURLSt="" picURLHq="">ILD</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Knight</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="ILD1" rarity="token">tokens</set>
+</card>
+<card>
+ <name>ILD Nightmare ILD</name>
+ <set picURL="/ILD Nightmare ILD.jpg" picURLSt="" picURLHq="">ILD</set>
+ <color>B</color>
+ <manacost>B</manacost>
+ <cmc>1</cmc>
+ <pt>3/2</pt>
+ <type>Token Creature — Nightmare</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="ILD3" rarity="token">tokens</set>
+</card>
+<card>
+ <name>ILD Warrior ILD</name>
+ <set picURL="/ILD Warrior ILD.jpg" picURLSt="" picURLHq="">ILD</set>
+ <color>R</color>
+ <manacost>R</manacost>
+ <cmc>1</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Warrior</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="ILD4" rarity="token">tokens</set>
+</card>
+<card>
+ <name>ILD Wolf ILD</name>
+ <set picURL="/ILD Wolf ILD.jpg" picURLSt="" picURLHq="">ILD</set>
+ <color>G</color>
+ <manacost>G</manacost>
+ <cmc>1</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Wolf</type>
+ <tablerow>2</tablerow>
+ <text>Exalted *(Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)* </text>
+ <token>1</token>
+ <set num="ILD5" rarity="token">tokens</set>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>Clue HIL</name>
+ <set picURL="/Clue HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Clue</type>
+ <tablerow>1</tablerow>
+ <text>{2}, Sacrifice this artifact: Draw a card. </text>
+ <token>1</token>
+ <set num="HIL17" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Angel HIL</name>
+ <set picURL="/HIL Angel HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Angel</type>
+ <tablerow>2</tablerow>
+ <text>Flying, vigilance </text>
+ <token>1</token>
+ <set num="HIL1" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Assassin HIL</name>
+ <set picURL="/HIL Assassin HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Assassin</type>
+ <tablerow>2</tablerow>
+ <text>Deathtouch </text>
+ <token>1</token>
+ <set num="HIL5" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Beast 2 HIL</name>
+ <set picURL="/HIL Beast 2 HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Beast</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL11" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Elf 2 HIL</name>
+ <set picURL="/HIL Elf 2 HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Elf</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL12" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Elf Soldier HIL</name>
+ <set picURL="/HIL Elf Soldier HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>W</color>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Elf Soldier</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL16" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Equipment HIL</name>
+ <set picURL="/HIL Equipment HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Equipment</type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +3/+3. Equip {3} *({3}: Attach to target creature you control. Equip only as a sorcery.)* </text>
+ <token>1</token>
+ <set num="HIL18" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Germ HIL</name>
+ <set picURL="/HIL Germ HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Germ</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL6" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Goblin HIL</name>
+ <set picURL="/HIL Goblin HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Goblin</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL9" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Hound HIL</name>
+ <set picURL="/HIL Hound HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Hound</type>
+ <tablerow>2</tablerow>
+ <text>Unleash *(You may have this creature enter the battlefield with a +1/+1 counter on it. It can't block as long as it has a +1/+1 counter on it.)* </text>
+ <token>1</token>
+ <set num="HIL10" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Hydra HIL</name>
+ <set picURL="/HIL Hydra HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Hydra</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL13" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Jack, Hero Reaper Emblem HIL</name>
+ <set picURL="/HIL Jack, Hero Reaper Emblem HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Jack</type>
+ <tablerow>1</tablerow>
+ <text>You may play creature and land cards from your opponents' graveyards. </text>
+ <token>1</token>
+ <set num="HIL21" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Kiyo HIL</name>
+ <set picURL="/HIL Kiyo HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Legendary Token Creature — Bird</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="HIL2" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Saproling HIL</name>
+ <set picURL="/HIL Saproling HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Saproling</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL14" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Skeleton HIL</name>
+ <set picURL="/HIL Skeleton HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Skeleton</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL7" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Soldier HIL</name>
+ <set picURL="/HIL Soldier HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL3" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Spirit HIL</name>
+ <set picURL="/HIL Spirit HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="HIL4" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Thopter HIL</name>
+ <set picURL="/HIL Thopter HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Thopter</type>
+ <tablerow>2</tablerow>
+ <text>Flying *(This creature can't be blocked except by creatures with flying or reach.)* </text>
+ <token>1</token>
+ <set num="HIL19" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Treasure HIL</name>
+ <set picURL="/HIL Treasure HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: Add one mana of any color. </text>
+ <token>1</token>
+ <set num="HIL20" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Wolf HIL</name>
+ <set picURL="/HIL Wolf HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Wolf</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL15" rarity="token">tokens</set>
+</card>
+<card>
+ <name>HIL Zombie HIL</name>
+ <set picURL="/HIL Zombie HIL.jpg" picURLSt="" picURLHq="">HIL</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Zombie</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="HIL8" rarity="token">tokens</set>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>colorless Construct LVS</name>
+ <set picURL="/colorless Construct LVS.jpg" picURLSt="" picURLHq="">LVS</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>X/X</pt>
+ <type>Token Artifact Creature — Construct</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="LVS2" rarity="token">tokens</set>
+ <reverse-related count="3">Advanced Schematics</reverse-related>
+</card>
+<card>
+ <name>blue Elemental 11LVS</name>
+ <set picURL="/blue Elemental 11LVS.jpg" picURLSt="" picURLHq="">LVS</set>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="LVS1" rarity="token">tokens</set>
+ <reverse-related>Crystal Vision Abomination</reverse-related>
+ <reverse-related count="2">Glitch, Galactic Muse</reverse-related>
+ <reverse-related>Glowspore Grove</reverse-related>
+ <reverse-related count="2">Glowspore Swarmgrounds</reverse-related>
+ <reverse-related>Lost Among the Stars</reverse-related>
+ <reverse-related>Malignant Reaver</reverse-related>
+ <reverse-related>Out-of-Body Experience</reverse-related>
+ <reverse-related count="4">Prismatic Scyphozoa</reverse-related>
+ <reverse-related count="2">Space Jelly Swarm</reverse-related>
+ <reverse-related count="2">Stalwart Guardian</reverse-related>
+ <reverse-related count="2">United Guardian</reverse-related>
+</card>
+<card>
+ <name>colorless Servo 11LVS</name>
+ <set picURL="/colorless Servo 11LVS.jpg" picURLSt="" picURLHq="">LVS</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Servo</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="LVS3" rarity="token">tokens</set>
+ <reverse-related count="2">Architect of the Derezzed</reverse-related>
+ <reverse-related>Combat Technician</reverse-related>
+ <reverse-related count="x">Combat Technician</reverse-related>
+ <reverse-related count="2">Convert to Resources</reverse-related>
+ <reverse-related>Joyous Explorer</reverse-related>
+ <reverse-related>Killdrone Assembly Works</reverse-related>
+ <reverse-related>Killdrone Engineer</reverse-related>
+ <reverse-related>Mining Rover Manager</reverse-related>
+ <reverse-related>Operations Manager</reverse-related>
+ <reverse-related count="x">Operations Manager</reverse-related>
+ <reverse-related>Paired Pathfinders</reverse-related>
+ <reverse-related count="2">Ready to Go</reverse-related>
+ <reverse-related>Robot Herder</reverse-related>
+ <reverse-related>Senator Christian Winters</reverse-related>
+ <reverse-related count="2">Source Decay</reverse-related>
+ <reverse-related count="3">Unending Armies</reverse-related>
+</card>
+<card>
+ <name>Treasure LVS</name>
+ <set picURL="/Treasure LVS.jpg" picURLSt="" picURLHq="">LVS</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: Add one mana of any color. </text>
+ <token>1</token>
+ <set num="LVS4" rarity="token">tokens</set>
+ <reverse-related>Aldorus Fin, Vice President</reverse-related>
+ <reverse-related>Mineral Retriever</reverse-related>
+ <reverse-related count="2">Ravenous Abomination</reverse-related>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>white Angel 44RWR</name>
+ <set picURL="/white Angel 44RWR.jpg" picURLSt="" picURLHq="">RWR</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Angel</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="RWR1" rarity="token">tokens</set>
+ <reverse-related>Mari, Dawn Resurgent</reverse-related>
+</card>
+<card>
+ <name>blue Bird 12RWR</name>
+ <set picURL="/blue Bird 12RWR.jpg" picURLSt="" picURLHq="">RWR</set>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/2</pt>
+ <type>Token Creature — Bird</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="RWR2" rarity="token">tokens</set>
+ <reverse-related count="2">Consult on Ages Lost</reverse-related>
+</card>
+<card>
+ <name>colorless Construct 11RWR</name>
+ <set picURL="/colorless Construct 11RWR.jpg" picURLSt="" picURLHq="">RWR</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Construct</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="RWR4" rarity="token">tokens</set>
+ <reverse-related>Devised Companions</reverse-related>
+ <reverse-related count="3">Devised Companions</reverse-related>
+ <reverse-related>Gleeful Deviser</reverse-related>
+ <reverse-related count="2">Henrike Clevain, Rail Baron</reverse-related>
+ <reverse-related>Severin, Broken Genius</reverse-related>
+ <reverse-related>Union Rail Strikebreaker</reverse-related>
+</card>
+<card>
+ <name>Emblem RWR</name>
+ <set picURL="/Emblem RWR.jpg" picURLSt="" picURLHq="">RWR</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Mari</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of each end step, you gain life equal to twice the life you've lost this turn. </text>
+ <token>1</token>
+ <set num="RWR5" rarity="token">tokens</set>
+</card>
+<card>
+ <name>green Spirit 11RWR</name>
+ <set picURL="/green Spirit 11RWR.jpg" picURLSt="" picURLHq="">RWR</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="RWR3" rarity="token">tokens</set>
+ <reverse-related>Absorb the Soul</reverse-related>
+ <reverse-related>Renegade Spiritualist</reverse-related>
+</card>
+<!-->Tokens</-->
+<card>
+ <name>TMA Instant Battalion Copy TMA</name>
+ <set picURL="/TMA Instant Battalion Copy TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <manacost>7</manacost>
+ <cmc>7</cmc>
+ <pt>5/5</pt>
+ <type>Token Artifact Creature — Golem</type>
+ <tablerow>2</tablerow>
+ <text>When Instant Battalion enters the battlefield, if it isn't a token, create two tokens that are copies of it. </text>
+ <token>1</token>
+ <set num="TMA12" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Magebane Kudzu Copy TMA</name>
+ <set picURL="/TMA Magebane Kudzu Copy TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>W</color>
+ <color>G</color>
+ <manacost>GW</manacost>
+ <cmc>2</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Plant Wolf</type>
+ <tablerow>2</tablerow>
+ <text>Whenever an opponent draws a card, if that player has drawn two or more cards this turn, create a token that's a copy of Magebane Kudzu. Whenever an opponent casts a noncreature spell, put a +1/+1 counter on Magebane Kudzu. </text>
+ <token>1</token>
+ <set num="TMA9" rarity="token">tokens</set>
+</card>
+<card>
+ <name>MA Construct TMA</name>
+ <set picURL="/MA Construct TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Construct</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="TMA10" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Angel TMA</name>
+ <set picURL="/TMA Angel TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Angel</type>
+ <tablerow>2</tablerow>
+ <text>Flying, vigilance </text>
+ <token>1</token>
+ <set num="TMA1" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Aura Curse TMA</name>
+ <set picURL="/TMA Aura Curse TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Enchantment — Aura Curse</type>
+ <tablerow>1</tablerow>
+ <text>Enchant player At the beginning of enchanted player's upkeep, that player loses 1 life. </text>
+ <token>1</token>
+ <set num="TMA4" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Beast TMA</name>
+ <set picURL="/TMA Beast TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Beast</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="TMA7" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Gold TMA</name>
+ <set picURL="/TMA Gold TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Gold</type>
+ <tablerow>1</tablerow>
+ <text>Sacrifice this artifact: Add one mana of any color. </text>
+ <token>1</token>
+ <set num="TMA11" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Insect TMA</name>
+ <set picURL="/TMA Insect TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Insect</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="TMA8" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Lady Mari of Morning Emblem TMA</name>
+ <set picURL="/TMA Lady Mari of Morning Emblem TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Mari</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of your upkeep, you gain 1 life. </text>
+ <token>1</token>
+ <set num="TMA13" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Monk TMA</name>
+ <set picURL="/TMA Monk TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Monk</type>
+ <tablerow>2</tablerow>
+ <text>Prowess </text>
+ <token>1</token>
+ <set num="TMA6" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Soldier TMA</name>
+ <set picURL="/TMA Soldier TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="TMA2" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Spirit TMA</name>
+ <set picURL="/TMA Spirit TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying </text>
+ <token>1</token>
+ <set num="TMA3" rarity="token">tokens</set>
+</card>
+<card>
+ <name>TMA Zombie TMA</name>
+ <set picURL="/TMA Zombie TMA.jpg" picURLSt="" picURLHq="">TMA</set>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Zombie</type>
+ <tablerow>2</tablerow>
+ <text> </text>
+ <token>1</token>
+ <set num="TMA5" rarity="token">tokens</set>
+</card>
+</cards>
+</cockatrice_carddatabase>

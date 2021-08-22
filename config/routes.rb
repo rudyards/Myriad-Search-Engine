@@ -28,5 +28,7 @@ Rails.application.routes.draw do
 
   get "sealed" => "sealed#index"
   get "/" => "card#index"
+  get "/setsdownload" => "card#setsdownload"
+  get "/tokensdownload" => "card#tokensdownload"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

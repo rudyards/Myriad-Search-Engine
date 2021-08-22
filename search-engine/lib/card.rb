@@ -145,7 +145,6 @@ class Card
       return
     end
     @mana_hash = Hash.new(0)
-
     mana = @mana_cost.gsub(/\{(.*?)\}/) do
       m = $1
       case m
@@ -158,9 +157,13 @@ class Card
         @mana_hash[$1] += 0.5
       when /\A([wubrg])\/([wubrg])\z/
         @mana_hash[normalize_mana_symbol(m)] += 1
+      when /\A([V])\/([WUBRG])\z/i
+        @mana_hash[normalize_mana_symbol(m)] += 1
       when /\A([wubrg])\/p\z/
         @mana_hash[normalize_mana_symbol(m)] += 1
       when /\A2\/([wubrg])\z/
+        @mana_hash[normalize_mana_symbol(m)] += 1
+      when /\AV\/([wubrg])\z/
         @mana_hash[normalize_mana_symbol(m)] += 1
       else
         raise "Unrecognized mana type: #{m}"
@@ -230,6 +233,9 @@ class Card
         ci << $1
       when /\A2\/([wubrg])\z/
         ci << $1
+      when /\A([v])\/([wubrg])\z/
+        # Sundered Mana
+        ci << $2
       when /\A([wubrg])\/([wubrg])\z/
         ci << $1 << $2
       when "chaos"
@@ -249,7 +255,7 @@ class Card
     colors_inferred_from_mana_cost = (@mana_hash || {}).keys
       .flat_map do |x|
         next [] if x =~ /[?xyzc]/
-        x = x.sub(/[p2]/, "")
+        x = x.sub(/[p2v]/, "")
         if x =~ /\A[wubrg]+\z/
           x.chars
         else

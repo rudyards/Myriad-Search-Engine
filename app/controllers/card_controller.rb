@@ -34,6 +34,20 @@ class CardController < ApplicationController
     end
   end
 
+  def setsdownload
+    send_file(
+      "#{Rails.root}/public/cards/AllSets.json",
+      filename: 'AllSets.json'
+    )
+  end
+
+  def tokensdownload
+    send_file(
+      "#{Rails.root}/public/cards/tokens.xml",
+      filename: 'tokens.xml'
+    )
+  end
+
   # Logic tested in CLIFrontend, probably should be moved to database
   # as this untested copypasta is nasty
   # FIXME: And now it's not even the same anymore
