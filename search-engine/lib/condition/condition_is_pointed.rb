@@ -16,7 +16,7 @@ class ConditionIsPointed < Condition
       "chromatic cube",
       "glimpse of dawn",
       "briar king's wake",
-      "seeking the city",
+      "seeking the city//finding only ruin",
       "flee the city",
       "wizard's tactics",
       "brimstone gatekeeper",
