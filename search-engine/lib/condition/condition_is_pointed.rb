@@ -31,6 +31,7 @@ class ConditionIsPointed < Condition
       "dilettante's drive",
       "vyreith, city-souled",
       "assemble the heroes",
+      "peace in our time",
     ]
 
     names
